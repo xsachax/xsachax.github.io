@@ -1,0 +1,9 @@
+{
+	"@context": "http://schema.org",
+	"@type": "Personal Portfolio",
+	"about": "Software Engineer",
+	"audience": {
+		"audienceType": "Anyone",
+		"geographicArea": "North America"
+	}
+}

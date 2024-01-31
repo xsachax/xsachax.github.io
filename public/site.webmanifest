@@ -1,0 +1,7 @@
+{
+	"name": "Sacha's Portfolio",
+	"short_name": "Portfolio",
+	"theme_color": "#ffffff",
+	"background_color": "#ffffff",
+	"display": "standalone"
+}
