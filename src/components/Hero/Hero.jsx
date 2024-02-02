@@ -4,7 +4,7 @@ import linkedin_icon from "/src/assets/icons/linkedin_icon.svg";
 import github_icon from "/src/assets/icons/github_icon.svg";
 import devpost_icon from "/src/assets/icons/devpost_icon.svg";
 import email_icon from "/src/assets/icons/email-icon.svg";
-import stadium from "/src/assets/images/stadium.png";
+import stadium from "/src/assets/images/stadium.webp";
 import SocialButton from "../SocialButton/SocialButton";
 import "../../global.css";
 
