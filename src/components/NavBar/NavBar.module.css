@@ -8,6 +8,7 @@
   width: 100%;
   background-color: var(--shade-9);
   box-shadow: 0 0 5px var(--shade-6);
+  z-index: 100;
 }
 
 .left-side-buttons {

@@ -1,73 +1,69 @@
 .hero {
-  height: 50%;
-  border-radius: 2rem;
   display: flex;
-  align-items: top;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  flex-direction: row;
-  width: 80%;
-  margin: auto;
-  gap: clamp(1rem, 8vw, 2rem);
-  flex-wrap: wrap;
-  padding: 3.5rem 2rem 1rem 2rem;
-  background-color: var(--shade-9);
-  border: 2px solid var(--shade-8);
-  margin-top: 7rem;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(22, 22, 22, 0) 50%,
+    rgba(22, 22, 22, 0.5) 80%,
+    rgb(22, 22, 22) 100%
+  );
+  z-index: 5;
+  pointer-events: none;
+}
+
+.spline {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hero-content {
   display: flex;
+  z-index: 1;
+  pointer-events: none;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  width: 40%;
-}
-
-.hero-content h1 {
-  width: 100%;
-  display: flex;
-  align-items: center;
   justify-content: start;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  color: var(--shade-2);
-  font-weight: 700;
-}
-
-.hero-content p {
+  margin-top: 9%;
+  height: 100%;
   width: 100%;
-  font-size: clamp(1rem, 1.2vw, 1.5rem);
-  color: var(--shade-3);
+  gap: 0;
 }
 
-.hero-image img {
-  width: clamp(15rem, 30vw, 22rem);
-  aspect-ratio: auto;
-}
-
-.hero-socials {
+.suspense {
   display: flex;
-  grid-template-columns: 1fr 1fr;
-  gap: 0rem 0.6rem;
-  width: 100%;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  z-index: 10;
 }
 
-@media screen and (max-width: 700px) {
-  .hero {
-    width: 100%;
-    margin-top: 3rem;
-    border: none;
-    border-radius: 0;
-    gap: 0;
-  }
+@media screen and (max-width: 1000px) {
   .hero-content {
-    width: 100%;
+    margin-top: 8rem;
   }
-  .hero-image img {
-    width: 15rem;
+  .spline {
+    top: 10rem;
+  }
+
+  .hero {
+    height: 60vh;
   }
 }

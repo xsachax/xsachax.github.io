@@ -25,18 +25,8 @@
 
 :root {
   scrollbar-gutter: stable;
-  --light-green: #5bc971;
-  --dark-green: #3a9e5f;
-  --background-green: #273229;
-  --medium-grey: #303338;
-  --background-grey: #2b2b2b;
-  --fire-orange: #f3900d;
-  --fire-yellow: #ffcc4c;
-  --card-grey: #2a2e33;
-  --bg-dark-blue: #12181b;
-  --bg-translucent-dark-blue: rgba(26, 34, 38, 0.9);
-  --text-blue: #6698de;
 
+  --shade-0: #ebebeb;
   --shade-1: #d3d3d3;
   --shade-2: #bdbdbd;
   --shade-3: #999999;
@@ -52,7 +42,7 @@
 
 body {
   background: var(--shade-10);
-  color: var(--shade-2);
+  color: var(--shade-0);
   font-family: Circular;
   font-weight: 300;
   margin: 0;
@@ -61,6 +51,8 @@ body {
 
 h1 {
   font-size: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -84,8 +76,9 @@ h6 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0;
+  color: var(--shade-2);
   margin: 0.5rem;
 }
 
@@ -109,6 +102,6 @@ p {
     font-size: 0.5rem;
   }
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
