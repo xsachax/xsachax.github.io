@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "./Hero.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
+import { isMobile } from "react-device-detect";
+import desk_img from "../../assets/images/desk_img.webp";
 
 function Hero() {
   const [frameLoaded, setFrameLoaded] = useState(false);
@@ -13,26 +15,38 @@ function Hero() {
         <p>{t("hero.subtitle")}</p>
       </div>
       <div className={styles["spline-container"]}>
-        {frameLoaded ? (
-          <></>
-        ) : (
-          <div className={styles["loader-container"]}>
-            <div className={styles["loader"]}></div>
+        {isMobile ? (
+          <div className={styles["mobile-spline"]}>
+            <img
+              src={desk_img}
+              alt="Static Desk View"
+              width="100%"
+              height="100%"
+            />
           </div>
+        ) : (
+          <>
+            {frameLoaded ? (
+              <></>
+            ) : (
+              <div className={styles["loader-container"]}>
+                <div className={styles["loader"]}></div>
+              </div>
+            )}
+            <iframe
+              id="frame1"
+              name="frame1"
+              alt="Desk Scene"
+              title="Desk Scene"
+              className={styles["spline"]}
+              src="https://my.spline.design/untitled-34d9f889fb20377288d352814dd7c074/"
+              frameBorder="0"
+              width="100%"
+              height="100%"
+              onLoad={() => setFrameLoaded(true)}
+            ></iframe>
+          </>
         )}
-        <iframe
-          id="frame1"
-          name="frame1"
-          alt="Desk Scene"
-          title="Desk Scene"
-          className={styles["spline"]}
-          src="https://my.spline.design/untitled-34d9f889fb20377288d352814dd7c074/"
-          frameBorder="0"
-          width="100%"
-          height="100%"
-          onLoad={() => setFrameLoaded(true)}
-        ></iframe>
-
         <div className={styles["fade"]}></div>
         <div className={styles["button-mask"]}></div>
       </div>
