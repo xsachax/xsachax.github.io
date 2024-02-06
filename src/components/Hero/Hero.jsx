@@ -6,14 +6,12 @@ import "../../global.css";
 function Hero() {
   return (
     <div className={styles["hero"]}>
-      <div>
-        <Suspense
-          fallback={
-            <div className={styles["suspense"]}>
-              <p>Loading...</p>
-            </div>
-          }
-        >
+      <div className={styles["hero-content"]}>
+        <h1>{t("hero.title")}</h1>
+        <p>{t("hero.subtitle")}</p>
+      </div>
+      <div className={styles["spline-container"]}>
+        <Suspense fallback={<p>Loading...</p>}>
           <iframe
             id="frame1"
             name="frame1"
@@ -28,11 +26,6 @@ function Hero() {
         </Suspense>
         <div className={styles["fade"]}></div>
         <div className={styles["button-mask"]}></div>
-      </div>
-
-      <div className={styles["hero-content"]}>
-        <h1>{t("hero.title")}</h1>
-        <p>{t("hero.subtitle")}</p>
       </div>
     </div>
   );
