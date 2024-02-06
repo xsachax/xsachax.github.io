@@ -13,7 +13,13 @@ function Hero() {
         <p>{t("hero.subtitle")}</p>
       </div>
       <div className={styles["spline-container"]}>
-        {frameLoaded ? <></> : <div className={styles["loader"]}></div>}
+        {frameLoaded ? (
+          <></>
+        ) : (
+          <div className={styles["loader-container"]}>
+            <div className={styles["loader"]}></div>
+          </div>
+        )}
         <iframe
           id="frame1"
           name="frame1"
