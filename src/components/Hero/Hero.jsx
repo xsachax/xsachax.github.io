@@ -1,14 +1,12 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import styles from "./Hero.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
 
-const Spline = React.lazy(() => import("@splinetool/react-spline"));
-
 function Hero() {
   return (
     <div className={styles["hero"]}>
-      <div className={styles["spline"]}>
+      <div>
         <Suspense
           fallback={
             <div className={styles["suspense"]}>
@@ -16,9 +14,20 @@ function Hero() {
             </div>
           }
         >
-          <Spline scene="https://prod.spline.design/syQodybaDtqMBV3k/scene.splinecode" />
+          <iframe
+            id="frame1"
+            name="frame1"
+            alt="Desk Scene"
+            title="Desk Scene"
+            className={styles["spline"]}
+            src="https://my.spline.design/untitled-34d9f889fb20377288d352814dd7c074/"
+            frameBorder="0"
+            width="100%"
+            height="100%"
+          ></iframe>
         </Suspense>
         <div className={styles["fade"]}></div>
+        <div className={styles["button-mask"]}></div>
       </div>
 
       <div className={styles["hero-content"]}>
