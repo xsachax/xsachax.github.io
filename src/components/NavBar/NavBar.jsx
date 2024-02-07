@@ -28,7 +28,7 @@ function NavBar() {
             type="submit"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1-A37jRCkA04KeTQweJ2L8MNmKxnlIDuH/view?usp=sharing",
+                "https://drive.google.com/file/d/18XJrFuswgLxbeQ9nMIgGFZQyVKclqI9B/view?usp=sharing",
                 "_blank"
               )
             }
