@@ -82,6 +82,19 @@
   text-align: center;
 }
 
+.hero-socials {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 0rem 0.6rem;
+  margin-top: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
 @keyframes spinner {
   0% {
     transform: rotate(0deg);

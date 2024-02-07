@@ -3,7 +3,12 @@ import styles from "./Hero.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
 import { isMobile } from "react-device-detect";
+import SocialButton from "../SocialButton/SocialButton";
 import desk_img from "../../assets/images/desk_img.webp";
+import linkedin_icon from "/src/assets/icons/linkedin_icon.svg";
+import github_icon from "/src/assets/icons/github_icon.svg";
+import devpost_icon from "/src/assets/icons/devpost_icon.svg";
+import email_icon from "/src/assets/icons/email-icon.svg";
 
 function Hero() {
   const [frameLoaded, setFrameLoaded] = useState(false);
@@ -48,6 +53,40 @@ function Hero() {
         <div className={styles["fade"]}></div>
         <div className={styles["button-mask"]}></div>
       </div>
+      {isMobile ? (
+        <div className={styles["hero-socials"]}>
+          <SocialButton
+            icon={linkedin_icon}
+            link="https://www.linkedin.com/in/sacha-ars/"
+            title="LinkedIn"
+            color="#0077B5"
+            alt={t("hero.linkedin_alt")}
+          />
+          <SocialButton
+            icon={github_icon}
+            link="https://github.com/xsachax"
+            title="GitHub"
+            color="#181717"
+            alt={t("hero.github_alt")}
+          />
+          <SocialButton
+            icon={devpost_icon}
+            link="https://devpost.com/xsachax"
+            title="Devpost"
+            color="#000000"
+            alt={t("hero.devpost_alt")}
+          />
+          <SocialButton
+            icon={email_icon}
+            link="mailto:sacha.arseneault@gmail.com"
+            title="Email"
+            color="#EA4335"
+            alt={t("hero.email_alt")}
+          />
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }
