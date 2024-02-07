@@ -29,9 +29,7 @@ function Hero() {
             {frameLoaded ? (
               <></>
             ) : (
-              <div className={styles["loader-container"]}>
-                <div className={styles["loader"]}></div>
-              </div>
+              <div className={styles["loader-container"]}></div>
             )}
             <iframe
               id="frame1"
