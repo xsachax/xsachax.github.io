@@ -12,8 +12,8 @@ function About() {
           <p>{t("about.p2")}</p>
           <p>{t("about.p3")}</p>
         </div>
-        <div className={styles["about-visual"]}>
-          <div></div>
+        <div className={styles["earth-container"]}>
+          <div className={styles["earth"]}></div>
         </div>
       </div>
     </div>

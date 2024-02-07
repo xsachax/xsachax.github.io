@@ -1,19 +1,21 @@
 .about {
-  height: 70vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
-  gap: clamp(1rem, 8vw, 2rem);
-  flex-wrap: wrap;
   background-color: rgb(22, 22, 22);
 }
 
 .about-container {
+  z-index: 5;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 8vw, 6rem);
   width: 70%;
   flex-wrap: wrap;
+  margin: 6rem auto;
 }
 
 .about-content {
@@ -40,26 +42,50 @@
   color: var(--shade-3);
 }
 
-.about-visual {
+.earth-container {
+  align-content: center;
+  margin: auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
   height: 100%;
   background-color: var(--shade-10);
-  border-radius: 10px;
   overflow: hidden;
 }
 
-@media screen and (max-width: 1000px) {
-  .about {
-    width: 100%;
-    margin-top: 8rem;
-    border: none;
-    border-radius: 0;
-    gap: 0;
+.earth {
+  width: 20rem;
+  height: 20rem;
+  min-width: 20rem;
+  min-height: 20rem;
+  background: url(../../assets/images/marked_earth.webp);
+  background-size: cover;
+  animation: animateEarth 12s linear infinite;
+  border-radius: 50%;
+  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+@keyframes animateEarth {
+  0% {
+    background-position: 0 0;
   }
+  100% {
+    background-position: 36rem 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .about-content {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .earth {
+    width: 10rem;
+    height: 10rem;
+    min-width: 10rem;
+    min-height: 10rem;
   }
 }
