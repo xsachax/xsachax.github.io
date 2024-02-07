@@ -2,6 +2,10 @@ export default {
   hero: {
     title: "Hey, I'm Sacha 👋",
     subtitle: "Software Developer.",
+    linkedin_alt: "LinkedIn",
+    github_alt: "GitHub",
+    devpost_alt: "Devpost",
+    email_alt: "Email",
   },
   about: {
     title: "About Me",
