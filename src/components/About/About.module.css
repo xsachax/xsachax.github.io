@@ -87,6 +87,12 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .type-animation {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .earth {
     width: 10rem;
