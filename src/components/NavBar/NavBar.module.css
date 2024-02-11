@@ -24,31 +24,6 @@
   margin-right: 10rem;
 }
 
-.square-button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background: none;
-  padding: 1rem;
-  color: var(--shade-2);
-  font-size: 1rem;
-  text-decoration: none;
-  cursor: pointer;
-  border: 2px solid var(--shade-7);
-  border-radius: 5px;
-  transition: border 0.3s ease;
-  height: 60%;
-  transition: all 0.15s;
-  font-weight: 500;
-  opacity: 0.8;
-  background-color: var(--shade-8);
-}
-
-.square-button:hover {
-  border: 2px solid var(--shade-4);
-  opacity: 1;
-}
-
 @media screen and (max-width: 800px) {
   .left-side-buttons {
     margin-left: 1rem;

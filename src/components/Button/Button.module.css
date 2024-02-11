@@ -1,0 +1,33 @@
+.square-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: none;
+  padding: 1rem;
+  color: var(--shade-2);
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid var(--shade-7);
+  border-radius: 5px;
+  transition: border 0.3s ease;
+  height: 2rem;
+  transition: all 0.15s;
+  font-weight: 500;
+  opacity: 0.8;
+  background-color: var(--shade-8);
+  transform: perspective(1000px) translateZ(0px);
+}
+
+.square-button:hover {
+  opacity: 1;
+  transform: perspective(1000px) translateZ(75px);
+  border-color: var(--shade-4);
+}
+
+@media screen and (max-width: 510px) {
+  .square-button {
+    font-size: 0.8rem;
+  }
+}

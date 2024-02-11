@@ -16,5 +16,6 @@ export default {
   fourofour: {
     title: "404",
     p1: "How did you even get here? 🤔",
+    button_text: "Go back home",
   },
 } as const;

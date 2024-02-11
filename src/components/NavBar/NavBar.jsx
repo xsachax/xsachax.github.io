@@ -1,5 +1,6 @@
 import { locale } from "../../i18n";
 import { useState } from "react";
+import Button from "../Button/Button";
 import styles from "./NavBar.module.css";
 import "../../global.css";
 
@@ -13,28 +14,26 @@ function NavBar() {
           <div>Sacha Arseneault</div>
         </div>
         <div className={styles["right-side-buttons"]}>
-          <button
-            className={`${styles["square-button"]} ${styles["language-selector"]}`}
-            type="submit"
+          <Button
+            className={`${styles["language-selector"]}`}
             onClick={() => {
               setLanguage(!language);
               locale.set(language ? "fr" : "en");
             }}
           >
             {language ? "fr" : "en"}
-          </button>
-          <button
-            className={`${styles["square-button"]}`}
-            type="submit"
-            onClick={() =>
+          </Button>
+          <Button
+            className={`${styles["language-selector"]}`}
+            onClick={() => {
               window.open(
                 "https://drive.google.com/file/d/18XJrFuswgLxbeQ9nMIgGFZQyVKclqI9B/view?usp=sharing",
                 "_blank"
-              )
-            }
+              );
+            }}
           >
             {"resume"}
-          </button>
+          </Button>
         </div>
       </nav>
     </div>
