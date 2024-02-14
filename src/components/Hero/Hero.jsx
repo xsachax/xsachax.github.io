@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./Hero.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
@@ -11,8 +10,6 @@ import devpost_icon from "/src/assets/icons/devpost_icon.svg";
 import email_icon from "/src/assets/icons/email-icon.svg";
 
 function Hero() {
-  const [frameLoaded, setFrameLoaded] = useState(false);
-
   return (
     <div className={styles["hero"]}>
       <div className={styles["hero-content"]}>
@@ -31,23 +28,18 @@ function Hero() {
           </div>
         ) : (
           <>
-            {frameLoaded ? (
-              <></>
-            ) : (
-              <div className={styles["loader-container"]}></div>
-            )}
-            <iframe
-              id="frame1"
-              name="frame1"
-              alt="Desk Scene"
-              title="Desk Scene"
+            <div
               className={styles["spline"]}
-              src="https://my.spline.design/untitled-34d9f889fb20377288d352814dd7c074/"
               frameBorder="0"
               width="100%"
               height="100%"
-              onLoad={() => setFrameLoaded(true)}
-            ></iframe>
+            >
+              <spline-viewer
+                loading-anim-type="spinner-big-light"
+                loading="lazy"
+                url="https://prod.spline.design/syQodybaDtqMBV3k/scene.splinecode"
+              ></spline-viewer>
+            </div>
           </>
         )}
         <div className={styles["fade"]}></div>
