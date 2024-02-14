@@ -38,6 +38,19 @@
   --shade-9: #202020;
   --shade-10: #161616;
   --shade-11: #0f0f0f;
+
+  --react: #0066ff;
+  --astro: #ff0000;
+  --css: #ff00fb;
+  --javascript: #f7df1e;
+  --python: #ffee00;
+  --unity: #cdcdcd;
+  --c-sharp: #09ff00;
+  --vr: #ff0000;
+  --plotly: #aa00ff;
+  --tensorflow: #ff6f00;
+  --opencv: #00ffd9;
+  --firebase: #ffca28;
 }
 
 body {
@@ -57,29 +70,39 @@ h1 {
 
 h2 {
   font-size: 1.75rem;
+  padding: 0;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 h4 {
   font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
 }
 
 h5 {
   font-size: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 h6 {
   font-size: 0.75rem;
+  padding: 0;
+  margin: 0;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0;
   color: var(--shade-2);
-  margin: 0.5rem;
+  margin: 0rem;
 }
 
 @media screen and (max-width: 510px) {
@@ -100,8 +123,5 @@ p {
   }
   h6 {
     font-size: 0.5rem;
-  }
-  p {
-    font-size: 1rem;
   }
 }

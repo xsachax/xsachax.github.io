@@ -86,6 +86,15 @@
   text-align: center;
 }
 
+.hero-content h1 {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  margin-top: 0.5rem;
+}
+
 .hero-socials {
   display: flex;
   grid-template-columns: 1fr 1fr;
