@@ -27,7 +27,7 @@ function NavBar() {
             className={`${styles["language-selector"]}`}
             onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/18XJrFuswgLxbeQ9nMIgGFZQyVKclqI9B/view?usp=sharing",
+                "https://drive.google.com/file/d/1Fu5jCkgOxn9AbSwP0CqqcvE69U4PdAbk/view?usp=sharing",
                 "_blank"
               );
             }}
