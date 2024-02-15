@@ -46,11 +46,13 @@
   --python: #ffee00;
   --unity: #cdcdcd;
   --c-sharp: #09ff00;
-  --vr: #ff0000;
-  --plotly: #aa00ff;
+  --vr: #ff9100;
+  --plotly: #00ffdd;
   --tensorflow: #ff6f00;
   --opencv: #00ffd9;
   --firebase: #ffca28;
+  --pandas: #f82f83;
+  --ai: #ff00e1;
 }
 
 body {

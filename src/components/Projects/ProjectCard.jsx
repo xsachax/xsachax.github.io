@@ -1,3 +1,4 @@
+import { useState } from "react";
 import github_card_icon from "../../assets/icons/github_card_icon.svg";
 import devpost_card_icon from "../../assets/icons/devpost_card_icon.svg";
 import website_card_icon from "../../assets/icons/website_card_icon.svg";
@@ -26,83 +27,120 @@ function ProjectCard({
     Tensorflow: "var(--tensorflow)",
     OpenCV: "var(--opencv)",
     Firebase: "var(--firebase)",
+    Pandas: "var(--pandas)",
+    AI: "var(--ai)",
   };
+
+  const tagLinks = {
+    React: "https://reactjs.org/",
+    Astro: "https://astro.build/",
+    CSS: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    Javascript: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    Python: "https://www.python.org/",
+    Unity: "https://unity.com/",
+    "C#": "https://docs.microsoft.com/en-us/dotnet/csharp/",
+    VR: "https://developer.oculus.com/",
+    Plotly: "https://plotly.com/",
+    Tensorflow: "https://www.tensorflow.org/",
+    OpenCV: "https://opencv.org/",
+    Firebase: "https://firebase.google.com/",
+    Pandas: "https://pandas.pydata.org/",
+    AI: "https://openai.com/",
+  };
+
+  const [showContent, setShowContent] = useState(false);
 
   return (
     <div
-      className={styles["project-card"]}
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundPosition: "bottom",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
+      className={styles["project-card-container"]}
+      onMouseEnter={() => setShowContent(true)}
+      onMouseLeave={() => setShowContent(false)}
     >
-      <div className={styles["project-card-content"]}>
-        <div className={styles["project-card-text"]}>
-          <h5>{title}</h5>
-          <h6>{description}</h6>
-        </div>
-        <div className={styles["project-extra"]}>
-          <div className={styles["project-links"]}>
-            {github && (
-              <a
-                href={github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles["project-link"]}
-              >
-                <img
-                  src={github_card_icon}
-                  alt="GitHub"
-                  width="25px"
-                  height="25px"
-                />
-              </a>
-            )}
-            {devpost && (
-              <a
-                href={devpost}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles["project-link"]}
-              >
-                <img
-                  src={devpost_card_icon}
-                  alt="Devpost"
-                  width="25px"
-                  height="25px"
-                />
-              </a>
-            )}
-            {website && (
-              <a
-                href={website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles["project-link"]}
-              >
-                <img
-                  src={website_card_icon}
-                  alt="Website"
-                  width="25px"
-                  height="25px"
-                />
-              </a>
-            )}
-          </div>
-          <div className={styles["project-tags"]}>
-            {tags.map((tag, index) => (
-              <div
-                key={index}
-                className={styles["project-tag"]}
-                style={{ color: tagColors[tag], borderColor: tagColors[tag] }}
-              >
-                {tag}
+      <div
+        className={styles["project-card"]}
+        id="project-card"
+        style={{
+          backgroundImage: `url(${image})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          height: showContent ? "95%" : "100%",
+        }}
+      >
+        {showContent && (
+          <div className={styles["project-card-content"]}>
+            <div className={styles["project-card-text"]}>
+              <h5 className={styles["project-card-text-title"]}>{title}</h5>
+              <h5 className={styles["project-card-text-description"]}>
+                {description}
+              </h5>
+            </div>
+            <div className={styles["project-extra"]}>
+              <div className={styles["project-links"]}>
+                {github && (
+                  <a
+                    href={github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles["project-link"]}
+                  >
+                    <img
+                      src={github_card_icon}
+                      alt="GitHub"
+                      width="25px"
+                      height="25px"
+                    />
+                  </a>
+                )}
+                {devpost && (
+                  <a
+                    href={devpost}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles["project-link"]}
+                  >
+                    <img
+                      src={devpost_card_icon}
+                      alt="Devpost"
+                      width="25px"
+                      height="25px"
+                    />
+                  </a>
+                )}
+                {website && (
+                  <a
+                    href={website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles["project-link"]}
+                  >
+                    <img
+                      src={website_card_icon}
+                      alt="Website"
+                      width="25px"
+                      height="25px"
+                    />
+                  </a>
+                )}
               </div>
-            ))}
+              <div className={styles["project-tags"]}>
+                {tags.map((tag, index) => (
+                  <button
+                    key={index}
+                    onClick={() => window.open(tagLinks[tag], "_blank")}
+                    className={styles["project-tag"]}
+                    style={{
+                      color: tagColors[tag],
+                      borderColor: tagColors[tag],
+                    }}
+                  >
+                    {tag}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
