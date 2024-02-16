@@ -99,13 +99,12 @@
   display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 0rem 0.6rem;
-  margin-top: 1rem;
   width: 100%;
   flex-wrap: wrap;
-  margin: auto;
   justify-content: center;
   align-items: center;
   z-index: 5;
+  transform: translateY(5rem);
 }
 
 @media screen and (max-width: 1000px) {

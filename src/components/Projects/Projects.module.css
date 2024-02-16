@@ -8,6 +8,12 @@
   background-color: rgb(22, 22, 22);
 }
 
+.projects-title {
+  display: flex;
+  align-items: center;
+  width: 16rem;
+}
+
 .projects-container {
   display: flex;
   grid-template-columns: 1fr 1fr;
@@ -21,7 +27,19 @@
 
 .projects p {
   font-size: clamp(1rem, 1.2vw, 1.5rem);
+  padding: 1rem;
+  text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
+  .projects-title {
+    width: 100%;
+    justify-content: center;
+  }
+  .type-animation {
+    display: none;
+  }
+  .projects-container {
+    width: 95%;
+  }
 }

@@ -29,31 +29,33 @@ function Projects() {
 
   return (
     <div className={styles["projects"]}>
-      <h1>
-        {t("projects.title")}
-        &nbsp;
-        <TypeAnimation
-          sequence={[
-            ". . . 🛠️",
-            2000,
-            " . . . 🚧",
-            2000,
-            ". . . 🏆",
-            2000,
-            " . . . 🌅",
-            2000,
-            ". . . 🔮",
-            2000,
-            " . . . 💥",
-            2000,
-          ]}
-          wrapper="span"
-          speed={5}
-          repeat={Infinity}
-          className={styles["type-animation"]}
-          style={{ color: "var(--shade-3)" }}
-        />
-      </h1>
+      <div className={styles["projects-title"]}>
+        <h1>
+          {t("projects.title")}
+          &nbsp;
+          <TypeAnimation
+            sequence={[
+              ". . . 🛠️",
+              2000,
+              " . . . 🚧",
+              2000,
+              ". . . 🏆",
+              2000,
+              " . . . 🌅",
+              2000,
+              ". . . 🔮",
+              2000,
+              " . . . 💥",
+              2000,
+            ]}
+            wrapper="span"
+            speed={5}
+            repeat={Infinity}
+            className={styles["type-animation"]}
+            style={{ color: "var(--shade-3)" }}
+          />
+        </h1>
+      </div>
       <p>{t("projects.subtitle")}</p>
       <div className={styles["projects-container"]}>
         {projects.map((project, index) => (

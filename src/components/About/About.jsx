@@ -7,34 +7,35 @@ import "../../global.css";
 function About() {
   return (
     <div className={styles["about"]}>
+      <div className={styles["about-title"]}>
+        <h1>
+          {t("about.title")}
+          &nbsp;
+          <TypeAnimation
+            sequence={[
+              ". . . 🖥️",
+              2000,
+              " . . . 🎨",
+              2000,
+              ". . . 🚀",
+              2000,
+              " . . . 🤠",
+              2000,
+              ". . . 🏔️",
+              2000,
+              " . . . 🏐",
+              2000,
+            ]}
+            wrapper="span"
+            speed={5}
+            repeat={Infinity}
+            className={styles["type-animation"]}
+            style={{ color: "var(--shade-3)" }}
+          />
+        </h1>
+      </div>
       <div className={styles["about-container"]}>
         <div className={styles["about-content"]}>
-          <h1>
-            {t("about.title")}
-            &nbsp;
-            <TypeAnimation
-              sequence={[
-                ". . . 🖥️",
-                2000,
-                " . . . 🎨",
-                2000,
-                ". . . 🚀",
-                2000,
-                " . . . 🤠",
-                2000,
-                ". . . 🏔️",
-                2000,
-                " . . . 🏐",
-                2000,
-              ]}
-              wrapper="span"
-              speed={5}
-              repeat={Infinity}
-              className={styles["type-animation"]}
-              style={{ color: "var(--shade-3)" }}
-            />
-          </h1>
-
           <p>{t("about.p1")}</p>
           <p>{t("about.p2")}</p>
           <p>{t("about.p3")}</p>
