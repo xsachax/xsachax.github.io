@@ -3,6 +3,7 @@ import NavBar from "../NavBar/NavBar";
 import Hero from "../Hero/Hero";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
+import Footer from "../Footer/Footer";
 import FourOFour from "../FourOFour/FourOFour";
 import "../../global.css";
 import styles from "./App.module.css";
@@ -22,6 +23,7 @@ function App() {
               </div>
               <About />
               <Projects />
+              <Footer />
             </>
           }
         />

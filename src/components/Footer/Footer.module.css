@@ -1,0 +1,35 @@
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 100%;
+  font-weight: 800;
+  color: var(--shade-2);
+  text-align: center;
+}
+
+.footer-content a {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.github-link {
+  background: none;
+  border: none;
+  margin: 0;
+  color: white;
+  opacity: 0.8;
+  transform: perspective(1000px) translateZ(0px);
+}
+
+.github-link:hover {
+  border: none;
+  transform: perspective(1000px) translateZ(75px);
+  opacity: 1;
+}
