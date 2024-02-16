@@ -1,5 +1,4 @@
 import { TypeAnimation } from "react-type-animation";
-import { useState } from "react";
 import styles from "./About.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
