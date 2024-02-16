@@ -53,6 +53,15 @@
   --firebase: #ffca28;
   --pandas: #f82f83;
   --ai: #ff00e1;
+
+  --vr-viz-border: #8900de;
+  --dot-deck-border: #787878c1;
+  --hungry-ai-border: #cfd22fb4;
+  --faang-slayer-border: #ff9100a5;
+  --hth-2023-border: #0051ffba;
+  --hth-2024-border: #ff0000a5;
+  --read-me-border: #00aeffba;
+  --feather-fox-border: #c85622aa;
 }
 
 body {

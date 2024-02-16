@@ -13,6 +13,8 @@ function ProjectCard({
   devpost,
   website,
   tags,
+  border_color,
+  show_border_passive,
 }) {
   const tagColors = {
     React: "var(--react)",
@@ -65,6 +67,10 @@ function ProjectCard({
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           height: showContent ? "95%" : "100%",
+          border:
+            (border_color && showContent) || show_border_passive
+              ? `1px solid ${border_color}`
+              : "1px solid transparent",
         }}
       >
         {showContent && (

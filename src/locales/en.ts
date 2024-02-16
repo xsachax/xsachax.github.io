@@ -25,6 +25,7 @@ export default {
         devpost: "https://devpost.com/software/vr-viz-f4jmy1",
         tags: ["VR", "Unity", "C#"],
         img: "vr_viz",
+        show_border_passive: false,
       },
       {
         title: "Hack The Hill 2024",
@@ -32,6 +33,7 @@ export default {
         website: "https://2024.hackthehill.com/",
         tags: ["React", "Astro", "CSS"],
         img: "hth_2024",
+        show_border_passive: true,
       },
       {
         title: "Dot Deck",
@@ -40,6 +42,7 @@ export default {
         devpost: "https://devpost.com/software/dot-deck",
         tags: ["Python", "Plotly", "Pandas"],
         img: "dot_deck",
+        show_border_passive: true,
       },
       {
         title: "Hungry.ai",
@@ -49,6 +52,7 @@ export default {
         devpost: "https://devpost.com/software/hungry-ai",
         tags: ["React", "Tensorflow", "AI"],
         img: "hungry_ai",
+        show_border_passive: false,
       },
       {
         title: "FAANG Slayer",
@@ -57,6 +61,7 @@ export default {
         devpost: "https://devpost.com/software/faang-slayer",
         tags: ["VR", "Unity", "AI"],
         img: "faang_slayer",
+        show_border_passive: false,
       },
       {
         title: "Read-me",
@@ -66,6 +71,7 @@ export default {
         website: "https://read-me.app",
         tags: ["Javascript", "Tensorflow", "OpenCV"],
         img: "read_me",
+        show_border_passive: true,
       },
       {
         title: "Hack The Hill 2023",
@@ -73,6 +79,7 @@ export default {
         website: "https://2023.hackthehill.com/",
         tags: ["React", "Astro", "CSS"],
         img: "hth_2023",
+        show_border_passive: true,
       },
       {
         title: "Feather Fox",
@@ -81,6 +88,7 @@ export default {
         website: "https://play.unity.com/mg/other/webgl-builds-147147",
         tags: ["Unity", "C#"],
         img: "feather_fox",
+        show_border_passive: false,
       },
     ],
   },
