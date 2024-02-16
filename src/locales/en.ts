@@ -8,7 +8,7 @@ export default {
     email_alt: "Email",
   },
   about: {
-    title: "About me",
+    title: "A bit about me",
     p1: "I'm Sacha, a Software Engineering undergraduate student at the University of Ottawa 🎓, in Canada. 🇨🇦",
     p2: "I aspire to pursue a career in AR/VR development 🥽, and I'm looking for opportunities to create positive change 🌱 with the software I write!",
     p3: "Feel free to connect with me on socials 📱, I'd love to talk about web development, virtual reality, or anything tech related! 💻",

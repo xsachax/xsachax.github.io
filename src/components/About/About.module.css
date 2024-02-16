@@ -11,7 +11,7 @@
 .about-title {
   display: flex;
   align-items: center;
-  width: 16rem;
+  width: 22rem;
 }
 
 .about-container {
@@ -52,7 +52,7 @@
 
 .earth-container {
   align-content: center;
-  margin: auto 0;
+  margin: 3rem 0 auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
