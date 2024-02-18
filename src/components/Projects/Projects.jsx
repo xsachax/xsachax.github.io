@@ -7,6 +7,7 @@ import vr_viz from "../../assets/thumbnails/vr-viz.svg";
 import dot_deck from "../../assets/thumbnails/dot-deck.svg";
 import hungry_ai from "../../assets/thumbnails/hungry-ai.svg";
 import faang_slayer from "../../assets/thumbnails/faang-slayer.svg";
+import kelpie from "../../assets/thumbnails/kelpie.svg";
 import hth_2023 from "../../assets/thumbnails/hth-2023.svg";
 import hth_2024 from "../../assets/thumbnails/hth-2024.svg";
 import read_me from "../../assets/thumbnails/read-me.webp";
@@ -20,6 +21,7 @@ function Projects() {
     dot_deck: dot_deck,
     hungry_ai: hungry_ai,
     faang_slayer: faang_slayer,
+    kelpie: kelpie,
     hth_2023: hth_2023,
     hth_2024: hth_2024,
     read_me: read_me,
@@ -31,6 +33,7 @@ function Projects() {
     dot_deck: "var(--dot-deck-border)",
     hungry_ai: "var(--hungry-ai-border)",
     faang_slayer: "var(--faang-slayer-border)",
+    kelpie: "var(--kelpie-border)",
     hth_2023: "var(--hth-2023-border)",
     hth_2024: "var(--hth-2024-border)",
     read_me: "var(--read-me-border)",

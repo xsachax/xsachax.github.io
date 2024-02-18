@@ -13,6 +13,37 @@ export default {
     p2: "Je souhaite poursuivre une carrière en développement AR/VR 🥽, et j'adore utiliser mon travail en logiciel pour aider les autres. 🌱",
     p3: "Connectez-vous avec moi sur les réseaux sociaux 📱, j'adore parler de développement web, de réalité virtuelle, ou de n'importe quelle autre technologie! 💻",
   },
+  work: {
+    title: "Travail",
+    subtitle:
+      "Voici quelques-unes des entreprises avec lesquelles j'ai travaillé!",
+    content: [
+      {
+        title: "Ciena",
+        description: "Ingénieur Logiciel",
+        website: "https://www.ciena.com/",
+        tags: ["React", "C", "Python", "Jenkins"],
+        img: "ciena",
+        show_border_passive: false,
+      },
+      {
+        title: "Propel VR",
+        description: "Ingénieur Logiciel VR",
+        website: "https://propelvr.ca/",
+        tags: ["VR", "Unity", "C#", "Blender"],
+        img: "propel",
+        show_border_passive: false,
+      },
+      {
+        title: "Synchroteam",
+        description: "Ingénieur Logiciel",
+        website: "https://www.synchroteam.com/",
+        tags: ["Flutter", "Dart"],
+        img: "synchroteam",
+        show_border_passive: true,
+      },
+    ],
+  },
   projects: {
     title: "Projets",
     subtitle: "Voici quelques-uns des projets sur lesquels j'ai travaillé!",
@@ -46,14 +77,14 @@ export default {
         show_border_passive: true,
       },
       {
-        title: "Hungry.ai",
+        title: "Read-me",
         description:
-          "Outil de recommandation de nourriture alimenté par l'AI et l'apprentissage automatique.",
-        github: "https://github.com/xsachax/waffle-hacks-2023",
-        devpost: "https://devpost.com/software/hungry-ai",
-        tags: ["React", "Tensorflow", "AI"],
-        img: "hungry_ai",
-        show_border_passive: false,
+          "Application de reconnaissance de texte pour les résultats de tests accessibles.",
+        github: "https://github.com/xsachax/accessible-test-results",
+        website: "https://read-me.app",
+        tags: ["Javascript", "Tensorflow", "OpenCV"],
+        img: "read_me",
+        show_border_passive: true,
       },
       {
         title: "FAANG Slayer",
@@ -66,13 +97,21 @@ export default {
         show_border_passive: false,
       },
       {
-        title: "Read-me",
+        title: "Hungry.ai",
         description:
-          "Application de reconnaissance de texte pour les résultats de tests accessibles.",
-        github: "https://github.com/xsachax/accessible-test-results",
-        website: "https://read-me.app",
-        tags: ["Javascript", "Tensorflow", "OpenCV"],
-        img: "read_me",
+          "Outil de recommandation de nourriture alimenté par l'AI et l'apprentissage automatique.",
+        github: "https://github.com/xsachax/waffle-hacks-2023",
+        devpost: "https://devpost.com/software/hungry-ai",
+        tags: ["React", "Tensorflow", "AI"],
+        img: "hungry_ai",
+        show_border_passive: false,
+      },
+      {
+        title: "Kelpie Robotics",
+        description: "Front-end VR pour contrôler un ROV.",
+        website: "https://kelpierobotics.com/",
+        tags: ["VR", "Unity", "C#"],
+        img: "kelpie",
         show_border_passive: true,
       },
       {

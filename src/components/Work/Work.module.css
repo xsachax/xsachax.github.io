@@ -1,4 +1,4 @@
-.projects {
+.work {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,13 +7,13 @@
   gap: 2rem;
 }
 
-.projects-title {
+.work-title {
   display: flex;
   align-items: center;
-  width: 15rem;
+  width: 13rem;
 }
 
-.projects-container {
+.work-container {
   display: flex;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -24,21 +24,21 @@
   margin: 2rem auto;
 }
 
-.projects p {
+.work p {
   font-size: clamp(1rem, 1.2vw, 1.5rem);
   padding: 1rem;
   text-align: center;
 }
 
 @media screen and (max-width: 600px) {
-  .projects-title {
+  .work-title {
     width: 100%;
     justify-content: center;
   }
   .type-animation {
     display: none;
   }
-  .projects-container {
+  .work-container {
     width: 95%;
   }
 }

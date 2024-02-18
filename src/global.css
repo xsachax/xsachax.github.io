@@ -46,18 +46,27 @@
   --python: #ffee00;
   --unity: #cdcdcd;
   --c-sharp: #09ff00;
-  --vr: #ff9100;
+  --vr: #8f32fa;
   --plotly: #00ffdd;
   --tensorflow: #ff6f00;
   --opencv: #00ffd9;
   --firebase: #ffca28;
   --pandas: #f82f83;
   --ai: #ff00e1;
+  --c: #c1c1c1;
+  --jenkins: #d24939;
+  --blender: #e27203;
+  --flutter: #58c2ef;
+  --dart: #11719e;
 
+  --ciena-border: #d90400;
+  --propel-border: #ffffff;
+  --synchroteam-border: #e58d25;
   --vr-viz-border: #8900de;
   --dot-deck-border: #787878c1;
   --hungry-ai-border: #b8270ab4;
   --faang-slayer-border: #ffffffa5;
+  --kelpie-border: #187a72;
   --hth-2023-border: #0051ffba;
   --hth-2024-border: #ff0000a5;
   --read-me-border: #00aeffba;

@@ -31,6 +31,11 @@ function ProjectCard({
     Firebase: "var(--firebase)",
     Pandas: "var(--pandas)",
     AI: "var(--ai)",
+    C: "var(--c)",
+    Jenkins: "var(--jenkins)",
+    Blender: "var(--blender)",
+    Flutter: "var(--flutter)",
+    Dart: "var(--dart)",
   };
 
   const tagLinks = {

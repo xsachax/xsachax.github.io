@@ -2,7 +2,7 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import Hero from "../Hero/Hero";
 import About from "../About/About";
-import Projects from "../Projects/Projects";
+import WorkAndProjects from "../Work/WorkAndProjects";
 import Footer from "../Footer/Footer";
 import FourOFour from "../FourOFour/FourOFour";
 import "../../global.css";
@@ -22,7 +22,7 @@ function App() {
                 <Hero />
               </div>
               <About />
-              <Projects />
+              <WorkAndProjects />
               <Footer />
             </>
           }
