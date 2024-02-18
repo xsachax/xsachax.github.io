@@ -53,6 +53,11 @@ function ProjectCard({
     Firebase: "https://firebase.google.com/",
     Pandas: "https://pandas.pydata.org/",
     AI: "https://openai.com/",
+    C: "https://en.cppreference.com/w/c/language",
+    Jenkins: "https://www.jenkins.io/",
+    Blender: "https://www.blender.org/",
+    Flutter: "https://flutter.dev/",
+    Dart: "https://dart.dev/",
   };
 
   const [showContent, setShowContent] = useState(false);
