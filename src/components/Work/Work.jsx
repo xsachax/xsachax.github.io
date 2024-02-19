@@ -6,8 +6,8 @@ import "../../global.css";
 import ciena from "../../assets/thumbnails/ciena.svg";
 import propel from "../../assets/thumbnails/propel.svg";
 import synchroteam from "../../assets/thumbnails/synchroteam.svg";
-
 import fallback from "../../assets/thumbnails/default.webp";
+import RevealDiv from "../../utils/RevealDiv";
 
 function Work() {
   const work = t("work.content");
@@ -25,34 +25,12 @@ function Work() {
 
   return (
     <div className={styles["work"]}>
-      <div className={styles["work-title"]}>
-        <h1>
-          {t("work.title")}
-          &nbsp;
-          <TypeAnimation
-            sequence={[
-              ". . . 💼",
-              2000,
-              " . . . 📊",
-              2000,
-              ". . . 📂",
-              2000,
-              " . . . 📎",
-              2000,
-              ". . . 📈",
-              2000,
-              " . . . 📆",
-              2000,
-            ]}
-            wrapper="span"
-            speed={5}
-            repeat={Infinity}
-            className={styles["type-animation"]}
-            style={{ color: "var(--shade-3)" }}
-          />
-        </h1>
-      </div>
-      <p>{t("work.subtitle")}</p>
+      <RevealDiv className={styles["work-title"]}>
+        <h1>{t("work.title")}</h1>
+      </RevealDiv>
+      <RevealDiv>
+        <p>{t("work.subtitle")}</p>
+      </RevealDiv>
       <div className={styles["work-container"]}>
         {work.map((company, index) => (
           <ProjectCard

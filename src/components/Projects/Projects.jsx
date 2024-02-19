@@ -13,6 +13,7 @@ import hth_2024 from "../../assets/thumbnails/hth-2024.svg";
 import read_me from "../../assets/thumbnails/read-me.webp";
 import feather_fox from "../../assets/thumbnails/feather-fox.webp";
 import fallback from "../../assets/thumbnails/default.webp";
+import RevealDiv from "../../utils/RevealDiv";
 
 function Projects() {
   const projects = t("projects.content");
@@ -42,34 +43,12 @@ function Projects() {
 
   return (
     <div className={styles["projects"]}>
-      <div className={styles["projects-title"]}>
-        <h1>
-          {t("projects.title")}
-          &nbsp;
-          <TypeAnimation
-            sequence={[
-              ". . . 🛠️",
-              2000,
-              " . . . 🚧",
-              2000,
-              ". . . 🏆",
-              2000,
-              " . . . 🌅",
-              2000,
-              ". . . 🔮",
-              2000,
-              " . . . 💥",
-              2000,
-            ]}
-            wrapper="span"
-            speed={5}
-            repeat={Infinity}
-            className={styles["type-animation"]}
-            style={{ color: "var(--shade-3)" }}
-          />
-        </h1>
-      </div>
-      <p>{t("projects.subtitle")}</p>
+      <RevealDiv className={styles["projects-title"]}>
+        <h1>{t("projects.title")}</h1>
+      </RevealDiv>
+      <RevealDiv>
+        <p>{t("projects.subtitle")}</p>
+      </RevealDiv>
       <div className={styles["projects-container"]}>
         {projects.map((project, index) => (
           <ProjectCard

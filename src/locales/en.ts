@@ -8,13 +8,13 @@ export default {
     email_alt: "Email",
   },
   about: {
-    title: "A bit about me",
+    title: "A bit about me 😺",
     p1: "I'm Sacha, a Software Engineering undergraduate student at the University of Ottawa 🎓, in Canada. 🇨🇦",
     p2: "I aspire to pursue a career in AR/VR development 🥽, and I'm looking for opportunities to create positive change 🌱 with the software I write!",
     p3: "Feel free to connect with me on socials 📱, I'd love to talk about web development, virtual reality, or anything tech related! 💻",
   },
   work: {
-    title: "Work",
+    title: "Work 🚀",
     subtitle: "Here are some of the companies I've worked with!",
     content: [
       {
@@ -44,7 +44,7 @@ export default {
     ],
   },
   projects: {
-    title: "Projects",
+    title: "Projects 🛠️",
     subtitle: "Here are some of the projects I've worked on!",
     content: [
       {
