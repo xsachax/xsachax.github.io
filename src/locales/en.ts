@@ -130,6 +130,9 @@ export default {
       },
     ],
   },
+  footer: {
+    title: "Made with ❤️ by Sacha Arseneault",
+  },
   fourofour: {
     title: "404",
     p1: "How did you even get here? 🤔",

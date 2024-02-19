@@ -3,6 +3,7 @@ import github_card_icon from "../../assets/icons/github_card_icon.svg";
 import devpost_card_icon from "../../assets/icons/devpost_card_icon.svg";
 import mail_card_icon from "../../assets/icons/mail_card_icon.svg";
 import styles from "./Footer.module.css";
+import { t } from "../../i18n";
 import "../../global.css";
 
 function Footer() {
@@ -10,7 +11,7 @@ function Footer() {
     <div>
       <nav className={styles["footer"]}>
         <div className={styles["footer-content"]}>
-          <div>Made with ❤️ by Sacha Arseneault</div>
+          <div>{t("footer.title")}</div>
           <div className={styles["footer-links"]}>
             <a
               href="https://www.linkedin.com/in/sacha-ars/"

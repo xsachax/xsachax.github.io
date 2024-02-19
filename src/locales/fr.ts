@@ -133,6 +133,9 @@ export default {
       },
     ],
   },
+  footer: {
+    title: "Développé avec ❤️ par Sacha Arseneault",
+  },
   fourofour: {
     title: "404",
     p1: "Comment êtes-vous arrivé ici? 🤔",
