@@ -49,6 +49,7 @@ function Projects() {
       <RevealDiv>
         <p>{t("projects.subtitle")}</p>
       </RevealDiv>
+
       <div className={styles["projects-container"]}>
         {projects.map((project, index) => (
           <ProjectCard

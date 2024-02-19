@@ -3,6 +3,7 @@ import { t } from "../../i18n";
 import "../../global.css";
 import { isMobile } from "react-device-detect";
 import desk_img from "../../assets/images/desk_img.webp";
+import RevealDiv from "../../utils/RevealDiv";
 
 function Hero() {
   return (

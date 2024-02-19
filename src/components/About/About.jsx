@@ -12,12 +12,16 @@ function About() {
       </RevealDiv>
       <div className={styles["about-container"]}>
         <div className={styles["about-content"]}>
-          <p>{t("about.p1")}</p>
-          <p>{t("about.p2")}</p>
-          <p>{t("about.p3")}</p>
+          <RevealDiv>
+            <p>{t("about.p1")}</p>
+            <p>{t("about.p2")}</p>
+            <p>{t("about.p3")}</p>
+          </RevealDiv>
         </div>
         <div className={styles["earth-container"]}>
-          <div className={styles["earth"]}></div>
+          <RevealDiv>
+            <div className={styles["earth"]}></div>
+          </RevealDiv>
         </div>
       </div>
     </div>

@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import github_card_icon from "../../assets/icons/github_card_icon.svg";
 import devpost_card_icon from "../../assets/icons/devpost_card_icon.svg";
 import website_card_icon from "../../assets/icons/website_card_icon.svg";
 import styles from "./ProjectCard.module.css";
 import "../../global.css";
+import { motion, useInView, useAnimation } from "framer-motion";
+import RevealDiv from "../../utils/RevealDiv";
 
 function ProjectCard({
   image,
@@ -62,13 +64,31 @@ function ProjectCard({
 
   const [showContent, setShowContent] = useState(false);
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    }
+  }, [isInView]);
+
   return (
     <div
       className={styles["project-card-container"]}
       onMouseEnter={() => setShowContent(true)}
       onMouseLeave={() => setShowContent(false)}
     >
-      <div
+      <motion.div
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate={controls}
+        transition={{ ease: "linear", duration: 0.15 }}
         className={styles["project-card"]}
         id="project-card"
         style={{
@@ -157,7 +177,7 @@ function ProjectCard({
             </div>
           </div>
         )}
-      </div>
+      </motion.div>
     </div>
   );
 }
