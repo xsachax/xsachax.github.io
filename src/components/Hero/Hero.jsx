@@ -45,6 +45,7 @@ function Hero() {
             height="100%"
           >
             <iframe
+              title={t("hero.spline_title")}
               src="https://my.spline.design/untitled-34d9f889fb20377288d352814dd7c074/"
               onLoad={() => {
                 setCanLoad(true);

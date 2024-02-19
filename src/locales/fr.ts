@@ -6,6 +6,7 @@ export default {
     github_alt: "GitHub",
     devpost_alt: "Devpost",
     email_alt: "Email",
+    spline_title: "Animation de bureau personnalisée",
   },
   about: {
     title: "À propos de moi 😺",
