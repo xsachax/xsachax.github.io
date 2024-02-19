@@ -1,11 +1,17 @@
 import { locale } from "../../i18n";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../Button/Button";
 import styles from "./NavBar.module.css";
 import "../../global.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function NavBar() {
   const [language, setLanguage] = useState(true);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   window.onscroll = function () {
     if (window.scrollY === 0) {
@@ -18,7 +24,12 @@ function NavBar() {
   };
 
   return (
-    <div className={styles["navbar-container"]}>
+    <div
+      className={styles["navbar-container"]}
+      data-aos="fade-down"
+      data-aos-duration="700"
+      data-aos-delay="2500"
+    >
       <nav className={styles["navbar"]}>
         <div className={styles["left-side-buttons"]}>
           <div>Sacha Arseneault</div>

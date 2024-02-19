@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import github_card_icon from "../../assets/icons/github_card_icon.svg";
 import devpost_card_icon from "../../assets/icons/devpost_card_icon.svg";
 import website_card_icon from "../../assets/icons/website_card_icon.svg";
