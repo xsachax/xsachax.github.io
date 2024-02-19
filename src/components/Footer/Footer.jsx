@@ -1,4 +1,6 @@
+import linkedin_card_icon from "../../assets/icons/linkedin_card_icon.svg";
 import github_card_icon from "../../assets/icons/github_card_icon.svg";
+import devpost_card_icon from "../../assets/icons/devpost_card_icon.svg";
 import styles from "./Footer.module.css";
 import "../../global.css";
 
@@ -7,20 +9,48 @@ function Footer() {
     <div>
       <nav className={styles["footer"]}>
         <div className={styles["footer-content"]}>
-          <a
-            href="https://github.com/xsachax/xsachax.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles["github-link"]}
-          >
-            <div>Made with ❤️ by Sacha Arseneault</div>
-            <img
-              src={github_card_icon}
-              alt="GitHub"
-              width="25px"
-              height="25px"
-            />
-          </a>
+          <div>Made with ❤️ by Sacha Arseneault</div>
+          <div className={styles["footer-links"]}>
+            <a
+              href="https://www.linkedin.com/in/sacha-ars/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles["link"]}
+            >
+              <img
+                src={linkedin_card_icon}
+                alt="LinkedIn"
+                width="25px"
+                height="25px"
+              />
+            </a>
+            <a
+              href="https://github.com/xsachax"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles["link"]}
+            >
+              <img
+                src={github_card_icon}
+                alt="GitHub"
+                width="25px"
+                height="25px"
+              />
+            </a>
+            <a
+              href="https://devpost.com/xsachax"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles["link"]}
+            >
+              <img
+                src={devpost_card_icon}
+                alt="Devpost"
+                width="25px"
+                height="25px"
+              />
+            </a>
+          </div>
         </div>
       </nav>
     </div>

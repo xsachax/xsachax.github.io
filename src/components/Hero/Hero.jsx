@@ -45,7 +45,7 @@ function Hero() {
         <div className={styles["fade"]}></div>
         <div className={styles["button-mask"]}></div>
       </div>
-      {isMobile && (
+      {/*isMobile && (
         <div className={styles["hero-socials"]}>
           <SocialButton
             icon={linkedin_icon}
@@ -76,7 +76,7 @@ function Hero() {
             alt={t("hero.email_alt")}
           />
         </div>
-      )}
+      )*/}
     </div>
   );
 }
