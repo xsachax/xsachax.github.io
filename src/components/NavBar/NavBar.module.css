@@ -1,36 +1,50 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  margin: 0 auto;
+  height: 3.5rem;
+  width: 100%;
+  z-index: 100;
+  top: 1rem;
+}
+
 .navbar {
   box-sizing: border-box;
-  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 3.5rem;
-  width: 100%;
-  background-color: var(--shade-9);
-  box-shadow: 0 0 5px var(--shade-6);
+  background-color: transparent;
+  width: 95%;
   z-index: 100;
+  border-radius: 50px;
+  backdrop-filter: blur(0px);
+  transition: 0.2s ease;
 }
 
 .left-side-buttons {
   display: flex;
   align-items: center;
-  margin-left: 10rem;
+  margin-left: 5rem;
+  filter: blur(0);
 }
 
 .right-side-buttons {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-right: 10rem;
+  margin-right: 5rem;
 }
 
 @media screen and (max-width: 800px) {
   .left-side-buttons {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 
   .right-side-buttons {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
   .square-button {

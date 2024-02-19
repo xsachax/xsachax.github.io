@@ -7,8 +7,18 @@ import "../../global.css";
 function NavBar() {
   const [language, setLanguage] = useState(true);
 
+  window.onscroll = function () {
+    if (window.scrollY === 0) {
+      document.querySelector("nav").style.backgroundColor = "transparent";
+      document.querySelector("nav").style.backdropFilter = "blur(0px)";
+    } else {
+      document.querySelector("nav").style.backgroundColor = "var(--navbar)";
+      document.querySelector("nav").style.backdropFilter = "blur(5px)";
+    }
+  };
+
   return (
-    <div>
+    <div className={styles["navbar-container"]}>
       <nav className={styles["navbar"]}>
         <div className={styles["left-side-buttons"]}>
           <div>Sacha Arseneault</div>

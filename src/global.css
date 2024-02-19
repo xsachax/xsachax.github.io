@@ -26,6 +26,8 @@
 :root {
   scrollbar-gutter: stable;
 
+  --navbar: rgba(38, 38, 38, 0.8);
+
   --shade-0: #ebebeb;
   --shade-1: #d3d3d3;
   --shade-2: #bdbdbd;
