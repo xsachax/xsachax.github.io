@@ -4,8 +4,8 @@ import devpost_card_icon from "../../assets/icons/devpost_card_icon.svg";
 import website_card_icon from "../../assets/icons/website_card_icon.svg";
 import styles from "./ProjectCard.module.css";
 import "../../global.css";
-import { motion, useInView, useAnimation } from "framer-motion";
-import RevealDiv from "../../utils/RevealDiv";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ProjectCard({
   image,
@@ -64,31 +64,19 @@ function ProjectCard({
 
   const [showContent, setShowContent] = useState(false);
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const controls = useAnimation();
-
   useEffect(() => {
-    if (isInView) {
-      controls.start("visible");
-    }
-  }, [isInView]);
+    AOS.init();
+  }, []);
 
   return (
     <div
       className={styles["project-card-container"]}
       onMouseEnter={() => setShowContent(true)}
       onMouseLeave={() => setShowContent(false)}
+      data-aos="fade-up"
+      data-aos-duration="700"
     >
-      <motion.div
-        ref={ref}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate={controls}
-        transition={{ ease: "linear", duration: 0.15 }}
+      <div
         className={styles["project-card"]}
         id="project-card"
         style={{
@@ -177,7 +165,7 @@ function ProjectCard({
             </div>
           </div>
         )}
-      </motion.div>
+      </div>
     </div>
   );
 }
