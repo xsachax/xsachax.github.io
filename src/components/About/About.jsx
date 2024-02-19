@@ -2,11 +2,18 @@ import { TypeAnimation } from "react-type-animation";
 import styles from "./About.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
+import { motion } from "framer-motion";
 
 function About() {
   return (
     <div className={styles["about"]}>
-      <div className={styles["about-title"]}>
+      <motion.div
+        className={styles["about-title"]}
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 0.3 }}
+        viewport={{ once: true, margin: "-100px" }}
+      >
         <h1>
           {t("about.title")}
           &nbsp;
@@ -32,7 +39,7 @@ function About() {
             style={{ color: "var(--shade-3)" }}
           />
         </h1>
-      </div>
+      </motion.div>
       <div className={styles["about-container"]}>
         <div className={styles["about-content"]}>
           <p>{t("about.p1")}</p>
