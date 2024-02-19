@@ -51,3 +51,21 @@
     font-size: 0.8rem;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .navbar-container {
+    top: 0;
+  }
+  .navbar {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .left-side-buttons {
+    margin-left: 1rem;
+  }
+
+  .right-side-buttons {
+    margin-right: 1rem;
+  }
+}

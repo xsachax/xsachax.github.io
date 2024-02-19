@@ -17,7 +17,12 @@ function RevealDiv({ children }) {
   }, [isInView]);
 
   return (
-    <div style={{ position: "relative", overflow: "hidden" }}>
+    <div
+      style={{
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
       <motion.div
         ref={ref}
         variants={{

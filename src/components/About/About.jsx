@@ -18,11 +18,11 @@ function About() {
             <p>{t("about.p3")}</p>
           </RevealDiv>
         </div>
-        <div className={styles["earth-container"]}>
-          <RevealDiv>
+        <RevealDiv>
+          <div className={styles["earth-container"]}>
             <div className={styles["earth"]}></div>
-          </RevealDiv>
-        </div>
+          </div>
+        </RevealDiv>
       </div>
     </div>
   );
