@@ -134,7 +134,6 @@ export default {
   },
   footer: {
     title: "Made with ❤️ by Sacha Arseneault",
-    scroll: "Back to top",
   },
   fourofour: {
     title: "404",

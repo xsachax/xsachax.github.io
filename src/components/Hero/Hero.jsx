@@ -20,7 +20,7 @@ function Hero() {
       <div
         className={styles["hero-content"]}
         data-aos="fade-down"
-        data-aos-duration="700"
+        data-aos-duration="900"
         data-aos-delay="2200"
       >
         <h1>{t("hero.title")}</h1>

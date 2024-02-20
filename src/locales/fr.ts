@@ -137,7 +137,6 @@ export default {
   },
   footer: {
     title: "Développé avec ❤️ par Sacha Arseneault",
-    scroll: "Retourner en haut",
   },
   fourofour: {
     title: "404",

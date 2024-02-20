@@ -2,25 +2,11 @@ import linkedin_card_icon from "../../assets/icons/linkedin_card_icon.svg";
 import github_card_icon from "../../assets/icons/github_card_icon.svg";
 import devpost_card_icon from "../../assets/icons/devpost_card_icon.svg";
 import mail_card_icon from "../../assets/icons/mail_card_icon.svg";
-import Button from "../Button/Button";
-import chevron from "../../assets/chevron.svg";
 import styles from "./Footer.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
 
 function Footer() {
-  window.onscroll = function () {
-    if (window.scrollY === 0) {
-      document.getElementById("scroll_top").style.opacity = "0";
-      document.getElementById("scroll_top").style.pointerEvents = "none";
-      document.getElementById("scroll_top").style.cursor = "default";
-    } else {
-      document.getElementById("scroll_top").style.opacity = "1";
-      document.getElementById("scroll_top").style.pointerEvents = "all";
-      document.getElementById("scroll_top").style.cursor = "pointer";
-    }
-  };
-
   return (
     <div>
       <nav className={styles["footer"]}>
@@ -79,19 +65,6 @@ function Footer() {
                 height="25px"
               />
             </a>
-          </div>
-          <div className={styles["scroll-top"]} id="scroll_top">
-            <Button
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              <img
-                className={styles["scroll-top-icon"]}
-                src={chevron}
-                alt={t("footer.scroll")}
-                width="14px"
-                height="14px"
-              />
-            </Button>
           </div>
         </div>
       </nav>

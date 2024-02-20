@@ -134,7 +134,7 @@
     transform: translateY(0) rotate(90deg);
   }
   50% {
-    transform: translateY(0.5rem) rotate(90deg);
+    transform: translateY(0.7rem) rotate(90deg);
   }
   100% {
     transform: translateY(0) rotate(90deg);
@@ -156,7 +156,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(0.5rem);
+    transform: translateY(0.7rem);
   }
   100% {
     transform: translateY(0);
