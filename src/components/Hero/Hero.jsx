@@ -4,6 +4,7 @@ import { t } from "../../i18n";
 import "../../global.css";
 import { isMobile } from "react-device-detect";
 import desk_img from "../../assets/images/desk_img.webp";
+import chevron from "../../assets/chevron.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -59,6 +60,12 @@ function Hero() {
         )}
         <div className={styles["fade"]}></div>
         <div className={styles["button-mask"]}></div>
+      </div>
+
+      <div className={styles["scroll-down"]}>
+        <p>{t("hero.scroll")}</p>
+        <img src={chevron} alt={t("hero.scroll")} width="14px" height="14px" />
+        <img src={chevron} alt={t("hero.scroll")} width="14px" height="14px" />
       </div>
     </div>
   );

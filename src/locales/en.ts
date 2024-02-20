@@ -7,6 +7,7 @@ export default {
     devpost_alt: "Devpost",
     email_alt: "Email",
     spline_title: "Custom Spline Desk Animation",
+    scroll: "scroll",
   },
   about: {
     title: "A bit about me 😺",
@@ -133,6 +134,7 @@ export default {
   },
   footer: {
     title: "Made with ❤️ by Sacha Arseneault",
+    scroll: "Back to top",
   },
   fourofour: {
     title: "404",

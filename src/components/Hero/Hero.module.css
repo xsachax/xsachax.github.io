@@ -107,6 +107,62 @@
   transform: translateY(5rem);
 }
 
+.scroll-down {
+  position: absolute;
+  display: flex;
+  width: 15px;
+  flex-direction: column;
+  bottom: 5%;
+  left: 0.5rem;
+  z-index: 5;
+  opacity: 0.8;
+  gap: 0.2rem;
+}
+
+.scroll-down :nth-child(1) {
+  margin: 0 0 1.2rem 0;
+  text-align: end;
+  font-weight: 300;
+  animation: bounceAndKeepRotated 2s infinite;
+  animation-delay: 0.5s;
+  transform: rotate(90deg);
+  color: white;
+}
+
+@keyframes bounceAndKeepRotated {
+  0% {
+    transform: translateY(0) rotate(90deg);
+  }
+  50% {
+    transform: translateY(0.5rem) rotate(90deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
+.scroll-down :nth-child(2) {
+  animation: bounce 2s infinite;
+  animation-delay: 0.5s;
+}
+
+.scroll-down :nth-child(3) {
+  animation: bounce 2s infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .hero-content {
     margin-top: 8rem;
@@ -149,6 +205,19 @@
 
   .mobile-spline {
     margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-down {
+    left: 50%;
+    bottom: 10%;
+  }
+  .scroll-down :nth-child(1) {
+    display: none;
+  }
+  .scroll-down :nth-child(3) {
+    display: none;
   }
 }
 
