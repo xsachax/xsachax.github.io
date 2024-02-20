@@ -27,8 +27,11 @@ function Hero() {
         <p>{t("hero.subtitle")}</p>
       </div>
       <div className={styles["spline-container"]}>
-        {(isMobile || canLoad == false) && (
-          <div className={styles["mobile-spline"]}>
+        {isMobile && (
+          <div
+            className={styles["mobile-spline"]}
+            style={{ display: canLoad ? "none" : "block" }}
+          >
             <img
               src={desk_img}
               alt="Static Desk View"
@@ -40,7 +43,7 @@ function Hero() {
         {isMobile == false && (
           <div
             className={styles["spline"]}
-            style={{ display: canLoad && isMobile == false ? "block" : "none" }}
+            style={{ display: canLoad ? "block" : "none" }}
             frameBorder="0"
             width="100%"
             height="100%"
