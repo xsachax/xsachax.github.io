@@ -6,7 +6,7 @@ import Hero from "../Hero/Hero";
 import About from "../About/About";
 import WorkAndProjects from "../Work/WorkAndProjects";
 import Footer from "../Footer/Footer";
-import FourOFour from "../FourOFour/FourOFour";
+import PageNotFound from "../PageNotFound/PageNotFound";
 import "../../global.css";
 import styles from "./App.module.css";
 
@@ -38,15 +38,7 @@ function App() {
             </>
           }
         />
-        <Route
-          path="*"
-          element={
-            <>
-              <NavBar />
-              <FourOFour />
-            </>
-          }
-        />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>
   );
