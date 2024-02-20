@@ -7,7 +7,7 @@ export default {
     devpost_alt: "Devpost",
     email_alt: "Email",
     spline_title: "Animation de bureau personnalisée",
-    scroll: "défilez",
+    scroll: "défile",
   },
   about: {
     title: "À propos de moi 😺",
