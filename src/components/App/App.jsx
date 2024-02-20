@@ -38,7 +38,15 @@ function App() {
             </>
           }
         />
-        <Route path="*" element={<PageNotFound />} />
+        <Route
+          path="*"
+          element={
+            <>
+              <NavBar />
+              <PageNotFound />
+            </>
+          }
+        />
       </Routes>
     </Router>
   );
