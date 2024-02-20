@@ -45,7 +45,7 @@
 
 .about-content p {
   width: 100%;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   font-size: clamp(1rem, 1.2vw, 1.5rem);
   color: var(--shade-3);
 }

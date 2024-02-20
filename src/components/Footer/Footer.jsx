@@ -7,11 +7,24 @@ import { t } from "../../i18n";
 import "../../global.css";
 
 function Footer() {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <div>
       <nav className={styles["footer"]}>
         <div className={styles["footer-content"]}>
-          <div>{t("footer.title")}</div>
+          <div
+            className={styles["footer-title"]}
+            onClick={() => {
+              window.open(
+                "https://github.com/xsachax/xsachax.github.io",
+                "_blank"
+              );
+            }}
+          >
+            {t("footer.title")}
+          </div>
           <div className={styles["footer-links"]}>
             <a
               href="https://www.linkedin.com/in/sacha-ars/"
@@ -65,6 +78,9 @@ function Footer() {
                 height="25px"
               />
             </a>
+          </div>
+          <div>
+            <p>{`© Sacha Arseneault ${year}`}</p>
           </div>
         </div>
       </nav>
