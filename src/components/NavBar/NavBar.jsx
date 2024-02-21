@@ -6,6 +6,7 @@ import styles from "./NavBar.module.css";
 import "../../global.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import logo from "../../assets/meta/favicon.svg";
 
 function NavBar() {
   const [language, setLanguage] = useState(true);
@@ -40,6 +41,15 @@ function NavBar() {
       >
         <nav className={styles["navbar"]}>
           <div className={styles["left-side-buttons"]}>
+            <img
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className={styles["navbar-logo"]}
+              src={logo}
+              alt="Logo"
+              width="40px"
+              height="40px"
+            />
+
             <div>Sacha Arseneault</div>
           </div>
           <div className={styles["right-side-buttons"]}>

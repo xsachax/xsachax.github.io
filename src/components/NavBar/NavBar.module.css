@@ -24,11 +24,30 @@
   transition: 0.2s ease;
 }
 
+.navbar-logo {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transform: perspective(1000px) translateZ(0px);
+  transition: 0.2s ease;
+}
+
+.navbar-logo:hover {
+  transform: perspective(1000px) translateZ(75px);
+  rotate: -10deg;
+  opacity: 1;
+  cursor: pointer;
+  color: var(--shade-0);
+}
+
 .left-side-buttons {
   display: flex;
+  height: 100%;
   align-items: center;
+  justify-content: center;
   margin-left: 5rem;
   filter: blur(0);
+  gap: 1rem;
 }
 
 .right-side-buttons {

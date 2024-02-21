@@ -13,7 +13,7 @@
   height: 2.2rem;
   transition: all 0.15s;
   font-weight: 500;
-  opacity: 0.8;
+  opacity: 1;
   padding: 0.1rem;
   background: linear-gradient(
     45deg,
@@ -27,7 +27,6 @@
 }
 
 .square-button:hover {
-  opacity: 1;
   transform: perspective(1000px) translateZ(50px);
   background: linear-gradient(
     45deg,
