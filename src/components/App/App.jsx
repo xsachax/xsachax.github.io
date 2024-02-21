@@ -28,7 +28,7 @@ function App() {
           element={
             <>
               {isLoading && <Loading />}
-              <NavBar />
+              <NavBar fof={false} />
               <div className={styles["wrapper"]}>
                 <Hero />
               </div>
@@ -42,7 +42,7 @@ function App() {
           path="*"
           element={
             <>
-              <NavBar />
+              <NavBar fof={true} />
               <PageNotFound />
             </>
           }

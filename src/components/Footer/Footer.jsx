@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import linkedin_card_icon from "../../assets/icons/linkedin_card_icon.svg";
 import github_card_icon from "../../assets/icons/github_card_icon.svg";
 import devpost_card_icon from "../../assets/icons/devpost_card_icon.svg";
@@ -5,15 +6,25 @@ import mail_card_icon from "../../assets/icons/mail_card_icon.svg";
 import styles from "./Footer.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Footer() {
   const date = new Date();
   const year = date.getFullYear();
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <nav className={styles["footer"]}>
-        <div className={styles["footer-content"]}>
+        <div
+          className={styles["footer-content"]}
+          data-aos="fade-right"
+          data-aos-duration="700"
+        >
           <div
             className={styles["footer-title"]}
             onClick={() => {

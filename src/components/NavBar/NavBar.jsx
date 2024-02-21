@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import logo from "../../assets/meta/favicon.svg";
 
-function NavBar() {
+function NavBar({ fof }) {
   const [language, setLanguage] = useState(true);
 
   useEffect(() => {
@@ -37,12 +37,14 @@ function NavBar() {
         className={styles["navbar-container"]}
         data-aos="fade-down"
         data-aos-duration="700"
-        data-aos-delay="2500"
+        data-aos-delay={fof ? "400" : "2500"}
       >
         <nav className={styles["navbar"]}>
           <div className={styles["left-side-buttons"]}>
             <img
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              onClick={() => {
+                window.location.reload();
+              }}
               className={styles["navbar-logo"]}
               src={logo}
               alt="Logo"
