@@ -56,7 +56,16 @@ function NavBar({ fof }) {
               height="40px"
             />
 
-            <div>Sacha Arseneault</div>
+            <div
+              onClick={() => {
+                fof && window.open("https://sachaa.dev", "_self");
+              }}
+              style={{
+                cursor: fof ? "pointer" : "default",
+              }}
+            >
+              Sacha Arseneault
+            </div>
           </div>
           <div className={styles["right-side-buttons"]}>
             <Button
