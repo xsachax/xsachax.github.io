@@ -43,7 +43,11 @@ function NavBar({ fof }) {
           <div className={styles["left-side-buttons"]}>
             <img
               onClick={() => {
-                window.location.reload();
+                fof
+                  ? window.open("https://sachaa.dev", "_self")
+                  : window.scrollY === 0
+                  ? window.location.reload()
+                  : window.scrollTo({ top: 0, behavior: "smooth" });
               }}
               className={styles["navbar-logo"]}
               src={logo}
@@ -78,17 +82,21 @@ function NavBar({ fof }) {
           </div>
         </nav>
       </div>
-      <div className={styles["scroll-top"]} id="scroll_top">
-        <Button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          <img
-            className={styles["scroll-top-icon"]}
-            src={chevron}
-            alt={t("hero.scroll")}
-            width="14px"
-            height="14px"
-          />
-        </Button>
-      </div>
+      {!fof && (
+        <div className={styles["scroll-top"]} id="scroll_top">
+          <Button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            <img
+              className={styles["scroll-top-icon"]}
+              src={chevron}
+              alt={t("hero.scroll")}
+              width="14px"
+              height="14px"
+            />
+          </Button>
+        </div>
+      )}
     </>
   );
 }
