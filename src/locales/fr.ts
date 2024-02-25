@@ -1,12 +1,8 @@
 export default {
   hero: {
-    title: "Salut, je suis Sacha 👋",
+    title: "Salut, je suis",
     subtitle: "Développeur de logiciels.",
-    linkedin_alt: "LinkedIn",
-    github_alt: "GitHub",
-    devpost_alt: "Devpost",
-    email_alt: "Email",
-    spline_title: "Animation de bureau personnalisée",
+    wave_alt: "Main qui salue",
     scroll: "défile",
   },
   about: {
@@ -18,7 +14,7 @@ export default {
   work: {
     title: "Expérience 🚀",
     subtitle:
-      "Voici quelques-unes des entreprises avec lesquelles j'ai travaillé!",
+      "Voici quelques-unes des entreprises pour lesquelles j'ai travaillé!",
     content: [
       {
         title: "Ciena",

@@ -1,12 +1,8 @@
 export default {
   hero: {
-    title: "Hey, I'm Sacha 👋",
+    title: "Hey, I'm",
     subtitle: "Software Developer.",
-    linkedin_alt: "LinkedIn",
-    github_alt: "GitHub",
-    devpost_alt: "Devpost",
-    email_alt: "Email",
-    spline_title: "Custom Spline Desk Animation",
+    wave_alt: "Wave",
     scroll: "scroll",
   },
   about: {
@@ -17,7 +13,7 @@ export default {
   },
   work: {
     title: "Work 🚀",
-    subtitle: "Here are some of the companies I've worked with!",
+    subtitle: "Here are some of the companies I've worked for!",
     content: [
       {
         title: "Ciena",

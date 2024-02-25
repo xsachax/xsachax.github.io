@@ -2,15 +2,14 @@ import { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
-import { isMobile } from "react-device-detect";
-import desk_img from "../../assets/images/desk_img.webp";
+import waving_hand from "../../assets/icons/waving-hand.svg";
+import logo from "../../assets/meta/favicon.svg";
 import chevron from "../../assets/chevron.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import RevealDiv from "../../utils/RevealDiv";
 
 function Hero() {
-  const [canLoad, setCanLoad] = useState(false);
-
   useEffect(() => {
     AOS.init();
   }, []);
@@ -21,48 +20,73 @@ function Hero() {
         className={styles["hero-content"]}
         data-aos="fade-down"
         data-aos-duration="900"
-        data-aos-delay="2200"
+        data-aos-delay="1000"
       >
-        <h1>{t("hero.title")}</h1>
-        <p>{t("hero.subtitle")}</p>
-      </div>
-      <div className={styles["spline-container"]}>
-        {isMobile && (
-          <div
-            className={styles["mobile-spline"]}
-            style={{ display: canLoad ? "none" : "block" }}
-          >
-            <img
-              src={desk_img}
-              alt="Static Desk View"
-              width="100%"
-              height="100%"
-            />
-          </div>
-        )}
-        {isMobile == false && (
-          <div
-            className={styles["spline"]}
-            style={{ display: canLoad ? "block" : "none" }}
-            frameBorder="0"
-            width="100%"
-            height="100%"
-          >
-            <iframe
-              title={t("hero.spline_title")}
-              src="https://my.spline.design/untitled-34d9f889fb20377288d352814dd7c074/"
-              onLoad={() => {
-                setCanLoad(true);
-              }}
-              loading="eager"
-              frameBorder="0"
-              width="100%"
-              height="100%"
-            ></iframe>
-          </div>
-        )}
-        <div className={styles["fade"]}></div>
-        <div className={styles["button-mask"]}></div>
+        <RevealDiv delay={1}>
+          <h1>
+            <span className={styles["name-prefix"]}>{t("hero.title")}</span>
+            &nbsp;
+            <span className={styles["name"]}>
+              <span
+                className={styles["letter"]}
+                data-aos="fade-down"
+                data-aos-duration="900"
+                data-aos-delay="1000"
+              >
+                S
+              </span>
+              <span
+                className={styles["letter"]}
+                data-aos="fade-down"
+                data-aos-duration="900"
+                data-aos-delay="1050"
+              >
+                a
+              </span>
+              <span
+                className={styles["letter"]}
+                data-aos="fade-down"
+                data-aos-duration="900"
+                data-aos-delay="1100"
+              >
+                c
+              </span>
+              <span
+                className={styles["letter"]}
+                data-aos="fade-down"
+                data-aos-duration="900"
+                data-aos-delay="1150"
+              >
+                h
+              </span>
+              <span
+                className={styles["letter"]}
+                data-aos="fade-down"
+                data-aos-duration="900"
+                data-aos-delay="1200"
+              >
+                a
+              </span>
+            </span>
+            <span className={styles["wave"]}>
+              <img
+                src={waving_hand}
+                alt={t("hero.wave_alt")}
+                width="100px"
+                height="100px"
+              />
+            </span>
+          </h1>
+        </RevealDiv>
+        <RevealDiv delay={1.2}>
+          <h2>{t("hero.subtitle")}</h2>
+        </RevealDiv>
+        <div className={styles["hero-img"]}>
+          <img src={logo} alt="Logo" width="600px" height="600px" />
+        </div>
+        <div className={styles["hero-img2"]}>
+          <img src={logo} alt="Logo" width="500px" height="500px" />
+        </div>
       </div>
 
       <div className={styles["scroll-down"]}>
