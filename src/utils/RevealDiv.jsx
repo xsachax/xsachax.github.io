@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import "../global.css";
 
-function RevealDiv({ children }) {
+function RevealDiv({ children, delay = 0 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -31,7 +31,7 @@ function RevealDiv({ children }) {
         }}
         initial="hidden"
         animate={controls}
-        transition={{ ease: "easeOut", duration: 0.5, delay: 0.3 }}
+        transition={{ ease: "easeOut", duration: 0.5, delay: 0.3 + delay }}
       >
         {children}
       </motion.div>
@@ -42,7 +42,7 @@ function RevealDiv({ children }) {
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ ease: "easeIn", duration: 0.5 }}
+        transition={{ ease: "easeIn", duration: 0.5, delay: delay }}
         style={{
           position: "absolute",
           opacity: 0.5,

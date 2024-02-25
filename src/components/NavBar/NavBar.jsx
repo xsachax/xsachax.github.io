@@ -33,14 +33,14 @@ function NavBar({ fof }) {
 
   return (
     <>
-      <div
-        className={styles["navbar-container"]}
-        data-aos="fade-down"
-        data-aos-duration="700"
-        data-aos-delay={fof ? "400" : "2500"}
-      >
+      <div className={styles["navbar-container"]}>
         <nav className={styles["navbar"]}>
-          <div className={styles["left-side-buttons"]}>
+          <div
+            className={styles["left-side-buttons"]}
+            data-aos="fade-down"
+            data-aos-duration="700"
+            data-aos-delay={fof ? "400" : "1200"}
+          >
             <img
               onClick={() => {
                 fof
@@ -67,7 +67,12 @@ function NavBar({ fof }) {
               Sacha Arseneault
             </div>
           </div>
-          <div className={styles["right-side-buttons"]}>
+          <div
+            className={styles["right-side-buttons"]}
+            data-aos="fade-down"
+            data-aos-duration="700"
+            data-aos-delay={fof ? "600" : "1400"}
+          >
             <Button
               className={`${styles["language-selector"]}`}
               onClick={() => {
