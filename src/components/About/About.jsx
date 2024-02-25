@@ -20,7 +20,19 @@ function About() {
         </div>
         <RevealDiv>
           <div className={styles["earth-container"]}>
-            <div className={styles["earth"]}></div>
+            <div
+              className={styles["earth"]}
+              onMouseEnter={() => {
+                document.querySelector(
+                  `.${styles["earth-container"]}`
+                ).style.scale = 1.1;
+              }}
+              onMouseLeave={() => {
+                document.querySelector(
+                  `.${styles["earth-container"]}`
+                ).style.scale = 1;
+              }}
+            ></div>
           </div>
         </RevealDiv>
       </div>

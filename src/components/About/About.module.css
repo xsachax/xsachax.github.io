@@ -53,14 +53,17 @@
 
 .earth-container {
   align-content: center;
-  margin: 3rem 0 auto 0;
+  margin: 3rem 1.5rem 1.5rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  background-color: var(--shade-10);
+  width: 20rem;
   overflow: visible;
-  padding: 1rem;
+  padding: 0.8rem;
+  background: var(--theme-gradient-pale);
+  border-radius: 50%;
+  transition: 0.2s all;
 }
 
 .earth {
@@ -72,14 +75,12 @@
   background-size: cover;
   animation: animateEarth 12s linear infinite;
   border-radius: 50%;
-  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.694);
   text-align: center;
   transition: 0.2s all;
   overflow: visible;
-}
-
-.earth:hover {
-  scale: 1.1;
+  opacity: 1;
+  background-color: var(--shade-10);
 }
 
 @keyframes animateEarth {
@@ -88,6 +89,15 @@
   }
   100% {
     background-position: 36rem 0;
+  }
+}
+
+@keyframes spineEarth {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
   }
 }
 
@@ -107,11 +117,34 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
+  .earth-container {
+    width: 12rem;
+    height: 12rem;
+    min-width: 12rem;
+    min-height: 12rem;
+    padding: 0.5rem;
+  }
   .earth {
     width: 12rem;
     height: 12rem;
     min-width: 12rem;
     min-height: 12rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .earth-container {
+    width: 10rem;
+    height: 10rem;
+    min-width: 10rem;
+    min-height: 10rem;
+    padding: 0.3rem;
+  }
+  .earth {
+    width: 10rem;
+    height: 10rem;
+    min-width: 10rem;
+    min-height: 10rem;
   }
 }
