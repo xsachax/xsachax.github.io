@@ -20,9 +20,8 @@ function Hero() {
         className={styles["hero-content"]}
         data-aos="fade-down"
         data-aos-duration="900"
-        data-aos-delay="1000"
       >
-        <RevealDiv delay={1}>
+        <RevealDiv delay={0}>
           <h1>
             <span className={styles["name-prefix"]}>{t("hero.title")}</span>
             &nbsp;
@@ -31,7 +30,6 @@ function Hero() {
                 className={styles["letter"]}
                 data-aos="fade-down"
                 data-aos-duration="900"
-                data-aos-delay="1000"
               >
                 S
               </span>
@@ -39,7 +37,7 @@ function Hero() {
                 className={styles["letter"]}
                 data-aos="fade-down"
                 data-aos-duration="900"
-                data-aos-delay="1050"
+                data-aos-delay="50"
               >
                 a
               </span>
@@ -47,7 +45,7 @@ function Hero() {
                 className={styles["letter"]}
                 data-aos="fade-down"
                 data-aos-duration="900"
-                data-aos-delay="1100"
+                data-aos-delay="100"
               >
                 c
               </span>
@@ -55,7 +53,7 @@ function Hero() {
                 className={styles["letter"]}
                 data-aos="fade-down"
                 data-aos-duration="900"
-                data-aos-delay="1150"
+                data-aos-delay="150"
               >
                 h
               </span>
@@ -63,7 +61,7 @@ function Hero() {
                 className={styles["letter"]}
                 data-aos="fade-down"
                 data-aos-duration="900"
-                data-aos-delay="1200"
+                data-aos-delay="200"
               >
                 a
               </span>
@@ -78,7 +76,7 @@ function Hero() {
             </span>
           </h1>
         </RevealDiv>
-        <RevealDiv delay={1.2}>
+        <RevealDiv delay={0.2}>
           <h2>{t("hero.subtitle")}</h2>
         </RevealDiv>
         <div className={styles["hero-img"]}>

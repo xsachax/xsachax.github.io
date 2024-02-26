@@ -39,7 +39,7 @@ function NavBar({ fof }) {
             className={styles["left-side-buttons"]}
             data-aos="fade-down"
             data-aos-duration="700"
-            data-aos-delay={fof ? "400" : "1200"}
+            data-aos-delay="200"
           >
             <img
               onClick={() => {
@@ -71,7 +71,7 @@ function NavBar({ fof }) {
             className={styles["right-side-buttons"]}
             data-aos="fade-down"
             data-aos-duration="700"
-            data-aos-delay={fof ? "600" : "1400"}
+            data-aos-delay="500"
           >
             <Button
               className={`${styles["language-selector"]}`}

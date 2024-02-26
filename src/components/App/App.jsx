@@ -11,7 +11,7 @@ import "../../global.css";
 import styles from "./App.module.css";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {

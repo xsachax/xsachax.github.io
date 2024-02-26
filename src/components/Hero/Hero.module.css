@@ -95,7 +95,7 @@
   transform-origin: 70% 70%;
   animation: 2s wave;
   animation-iteration-count: 1;
-  animation-delay: 1.2s;
+  animation-delay: 0.2s;
   width: clamp(1rem, 8vw, 6rem);
   height: clamp(1rem, 8vw, 6rem);
 }
