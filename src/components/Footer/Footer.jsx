@@ -91,9 +91,6 @@ function Footer() {
                 />
               </a>
             </div>
-            <div>
-              <p>{`© Sacha Arseneault ${year}`}</p>
-            </div>
           </div>
         </div>
       </nav>
