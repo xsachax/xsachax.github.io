@@ -1,8 +1,8 @@
 import ProjectCard from "./ProjectCard";
-import { TypeAnimation } from "react-type-animation";
 import styles from "./Projects.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
+import vroom from "../../assets/thumbnails/vroom.svg";
 import vr_viz from "../../assets/thumbnails/vr-viz.svg";
 import dot_deck from "../../assets/thumbnails/dot-deck.svg";
 import hungry_ai from "../../assets/thumbnails/hungry-ai.svg";
@@ -18,6 +18,7 @@ import RevealDiv from "../../utils/RevealDiv";
 function Projects() {
   const projects = t("projects.content");
   const thumbnails = {
+    vroom: vroom,
     vr_viz: vr_viz,
     dot_deck: dot_deck,
     hungry_ai: hungry_ai,
@@ -30,6 +31,7 @@ function Projects() {
   };
 
   const border_colors = {
+    vroom: "var(--vroom-border)",
     vr_viz: "var(--vr-viz-border)",
     dot_deck: "var(--dot-deck-border)",
     hungry_ai: "var(--hungry-ai-border)",

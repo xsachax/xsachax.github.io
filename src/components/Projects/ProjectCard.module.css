@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 45%;
-  height: 18rem;
+  height: clamp(15rem, 20vw, 25rem);
   transition: 0.3s ease;
 }
 

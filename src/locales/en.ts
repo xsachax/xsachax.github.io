@@ -46,6 +46,15 @@ export default {
     subtitle: "Here are some of the projects I've worked on!",
     content: [
       {
+        title: "VRoom",
+        description: "Virtual Reality breakout rooms to help student study.",
+        github: "https://github.com/xsachax/vroom_uottahack-2024",
+        devpost: "https://devpost.com/software/vroom-op5qij",
+        tags: ["VR", "Unity", "C#", "AI"],
+        img: "vroom",
+        show_border_passive: false,
+      },
+      {
         title: "Vr Viz",
         description:
           "Virtual Reality app highlighting trends in Open-source Data.",
