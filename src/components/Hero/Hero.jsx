@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import styles from "./Hero.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
 import waving_hand from "../../assets/icons/waving-hand.svg";
-import logo from "../../assets/meta/favicon.svg";
+import logo from "/src/assets/favicon.svg";
 import chevron from "../../assets/chevron.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";

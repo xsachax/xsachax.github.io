@@ -6,7 +6,7 @@ import styles from "./NavBar.module.css";
 import "../../global.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import logo from "../../assets/meta/favicon.svg";
+import logo from "/src/assets/favicon.svg";
 
 function NavBar({ fof }) {
   const [language, setLanguage] = useState(true);

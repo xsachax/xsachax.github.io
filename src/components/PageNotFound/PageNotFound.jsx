@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import styles from "./PageNotFound.module.css";
 import { t } from "../../i18n";
 import Button from "../Button/Button";
-import logo from "../../assets/meta/favicon.svg";
+import logo from "/src/assets/favicon.svg";
 import "../../global.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
