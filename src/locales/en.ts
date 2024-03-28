@@ -7,9 +7,9 @@ export default {
   },
   about: {
     title: "A bit about me 😺",
-    p1: "I'm Sacha, a Software Engineering undergraduate student at the University of Ottawa 🎓, in Canada. 🇨🇦",
-    p2: "I aspire to pursue a career in AR/VR development 🥽, and I'm looking for opportunities to create positive change 🌱 with the software I write!",
-    p3: "Feel free to connect with me on socials 📱, I'd love to talk about web development, virtual reality, or anything tech related! 💻",
+    p1: "I'm Sacha, a Software Engineering undergraduate student at the University of Ottawa, in Canada. 🇨🇦",
+    p2: "I aspire to pursue a career at the forefront of advancements in tech, and I'm looking for opportunities to create positive change with the software I write! 🌱",
+    p3: "Feel free to connect with me on socials, I'd love to talk about web development, virtual reality, or anything tech related! 💻",
   },
   work: {
     title: "Work 🚀",
@@ -19,7 +19,7 @@ export default {
         title: "Ciena",
         description: "Software Engineer Intern",
         website: "https://www.ciena.com/",
-        tags: ["React", "C", "Python", "Jenkins"],
+        tags: ["React", "C", "Python"],
         img: "ciena",
         show_border_passive: false,
       },
@@ -47,7 +47,7 @@ export default {
     content: [
       {
         title: "VRoom",
-        description: "Virtual Reality breakout rooms to help student study.",
+        description: "Collaborative Breakout Rooms in Virtual Reality.",
         github: "https://github.com/xsachax/vroom_uottahack-2024",
         devpost: "https://devpost.com/software/vroom-op5qij",
         tags: ["VR", "Unity", "C#", "AI"],
