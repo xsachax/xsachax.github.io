@@ -30,6 +30,10 @@
   font-size: clamp(1.3rem, 2vw, 3rem);
 }
 
+.fof-btn {
+  z-index: 100;
+}
+
 .fof-img {
   position: absolute;
   right: -20rem;

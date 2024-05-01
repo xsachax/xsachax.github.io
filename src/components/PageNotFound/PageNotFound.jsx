@@ -21,10 +21,11 @@ function PageNotFound() {
       >
         <h1>{t("fourofour.title")}</h1>
         <p>{t("fourofour.p1")}</p>
-        <Button onClick={() => window.open("https://sachaa.dev", "_self")}>
-          {t("fourofour.button_text")}
-        </Button>
-
+        <div className={styles["fof-btn"]}>
+          <Button onClick={() => window.open("https://sachaa.dev", "_self")}>
+            {t("fourofour.button_text")}
+          </Button>
+        </div>
         <div className={styles["fof-img"]}>
           <img src={logo} alt="Logo" width="600px" height="600px" />
         </div>
