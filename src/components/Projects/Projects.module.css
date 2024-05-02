@@ -22,6 +22,7 @@
   width: 80%;
   flex-wrap: wrap;
   margin: 2rem auto;
+  max-width: 1536px;
 }
 
 .projects p {

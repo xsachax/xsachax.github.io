@@ -23,6 +23,7 @@
   color: var(--shade-1);
   cursor: default;
   z-index: 1;
+  max-width: 1536px;
 }
 
 .hero-content span {
@@ -239,6 +240,10 @@
     height: 45rem;
     top: 5rem;
   }
+
+  .hero-img2 {
+    right: 19rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -246,6 +251,10 @@
     width: 45rem;
     height: 45rem;
     top: 10rem;
+  }
+
+  .hero-img2 {
+    display: none;
   }
 
   .scroll-down {

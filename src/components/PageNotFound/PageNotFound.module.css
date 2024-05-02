@@ -20,6 +20,7 @@
   width: 80%;
   margin: 0 auto;
   gap: 1.5rem;
+  max-width: 1536px;
 }
 
 .fourofour-content h1 {

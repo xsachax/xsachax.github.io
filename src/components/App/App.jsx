@@ -29,11 +29,13 @@ function App() {
             <>
               {isLoading && <Loading />}
               <NavBar fof={false} />
-              <div className={styles["wrapper"]}>
+              <div className={styles["hero-wrapper"]}>
                 <Hero />
               </div>
-              <About />
-              <WorkAndProjects />
+              <div className={styles["main-wrapper"]}>
+                <About />
+                <WorkAndProjects />
+              </div>
               <Footer />
             </>
           }
