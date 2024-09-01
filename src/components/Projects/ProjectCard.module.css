@@ -18,6 +18,10 @@
   overflow: hidden;
 }
 
+.project-card:hover {
+  cursor: pointer;
+}
+
 .project-card-text h6 {
   font-size: 0.8rem;
   color: var(--shade-2);

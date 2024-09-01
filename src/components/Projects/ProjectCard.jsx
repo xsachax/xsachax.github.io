@@ -79,6 +79,12 @@ function ProjectCard({
       <div
         className={styles["project-card"]}
         id="project-card"
+        onClick={() => {
+          window.open(
+            website ? website : devpost ? devpost : github ? github : null,
+            "_blank"
+          );
+        }}
         style={{
           backgroundImage: `url(${image})`,
           backgroundPosition: "center",
@@ -102,10 +108,8 @@ function ProjectCard({
             <div className={styles["project-extra"]}>
               <div className={styles["project-links"]}>
                 {github && (
-                  <a
-                    href={github}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <div
+                    onClick={() => window.open(github, "_blank")}
                     className={styles["project-link"]}
                   >
                     <img
@@ -114,13 +118,11 @@ function ProjectCard({
                       width="25px"
                       height="25px"
                     />
-                  </a>
+                  </div>
                 )}
                 {devpost && (
-                  <a
-                    href={devpost}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <div
+                    onClick={() => window.open(devpost, "_blank")}
                     className={styles["project-link"]}
                   >
                     <img
@@ -129,13 +131,11 @@ function ProjectCard({
                       width="25px"
                       height="25px"
                     />
-                  </a>
+                  </div>
                 )}
                 {website && (
-                  <a
-                    href={website}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <div
+                    onClick={() => window.open(website, "_blank")}
                     className={styles["project-link"]}
                   >
                     <img
@@ -144,7 +144,7 @@ function ProjectCard({
                       width="25px"
                       height="25px"
                     />
-                  </a>
+                  </div>
                 )}
               </div>
               <div className={styles["project-tags"]}>
