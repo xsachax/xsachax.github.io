@@ -65,8 +65,18 @@ export default {
         show_border_passive: false,
       },
       {
+        title: "Hack The Hill Base Site",
+        description: "Landing Page for Hack The Hill's Org Website.",
+        github: "https://github.com/HacktheHill/org-website",
+        website: "https://hackthehill.org/",
+        tags: ["React", "Astro", "Tailwind"],
+        img: "hth_org",
+        show_border_passive: true,
+      },
+      {
         title: "Hack The Hill 2024",
         description: "Landing Page for Hack The Hill 2024 Hackathon.",
+        github: "https://github.com/HacktheHill/hackathon-website",
         website: "https://2024.hackthehill.com/",
         tags: ["React", "Astro", "CSS"],
         img: "hth_2024",
@@ -121,6 +131,7 @@ export default {
       {
         title: "Hack The Hill 2023",
         description: "Landing Page for Hack The Hill 2023 Hackathon.",
+        github: "https://github.com/HacktheHill/hackathon-website/tree/2023",
         website: "https://2023.hackthehill.com/",
         tags: ["React", "Astro", "CSS"],
         img: "hth_2023",

@@ -85,6 +85,7 @@
   --blender: #e27203;
   --flutter: #58c2ef;
   --dart: #11719e;
+  --tailwind: #06b6d4;
 
   --ciena-border: #d90400;
   --propel-border: #ffffff;
@@ -97,6 +98,7 @@
   --kelpie-border: #187a72;
   --hth-2023-border: #0051ffba;
   --hth-2024-border: #ff0000a5;
+  --hth-org-border: #ff3535;
   --read-me-border: #00aeffba;
   --feather-fox-border: #c85622aa;
 }

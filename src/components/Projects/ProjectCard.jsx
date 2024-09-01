@@ -38,6 +38,7 @@ function ProjectCard({
     Blender: "var(--blender)",
     Flutter: "var(--flutter)",
     Dart: "var(--dart)",
+    Tailwind: "var(--tailwind)",
   };
 
   const tagLinks = {
@@ -60,6 +61,7 @@ function ProjectCard({
     Blender: "https://www.blender.org/",
     Flutter: "https://flutter.dev/",
     Dart: "https://dart.dev/",
+    Tailwind: "https://tailwindcss.com/",
   };
 
   const [showContent, setShowContent] = useState(false);

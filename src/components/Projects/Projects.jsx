@@ -10,6 +10,7 @@ import faang_slayer from "../../assets/thumbnails/faang-slayer.svg";
 import kelpie from "../../assets/thumbnails/kelpie.svg";
 import hth_2023 from "../../assets/thumbnails/hth-2023.svg";
 import hth_2024 from "../../assets/thumbnails/hth-2024.svg";
+import hth_org from "../../assets/thumbnails/hth-org.svg";
 import read_me from "../../assets/thumbnails/read-me.webp";
 import feather_fox from "../../assets/thumbnails/feather-fox.webp";
 import fallback from "../../assets/thumbnails/default.webp";
@@ -26,6 +27,7 @@ function Projects() {
     kelpie: kelpie,
     hth_2023: hth_2023,
     hth_2024: hth_2024,
+    hth_org: hth_org,
     read_me: read_me,
     feather_fox: feather_fox,
   };
@@ -39,6 +41,7 @@ function Projects() {
     kelpie: "var(--kelpie-border)",
     hth_2023: "var(--hth-2023-border)",
     hth_2024: "var(--hth-2024-border)",
+    hth_org: "var(--hth-org-border)",
     read_me: "var(--read-me-border)",
     feather_fox: "var(--feather-fox-border)",
   };
