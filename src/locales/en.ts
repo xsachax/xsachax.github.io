@@ -16,6 +16,14 @@ export default {
     subtitle: "Here are some of the companies I've worked for!",
     content: [
       {
+        title: "Motorola Solutions",
+        description: "Software Engineer Intern",
+        website: "https://www.motorolasolutions.com/",
+        tags: ["Java", "Spring Boot", "AWS", "Docker", "Kubernetes"],
+        img: "motorola",
+        show_border_passive: false,
+      },
+      {
         title: "Ciena",
         description: "Software Engineer Intern",
         website: "https://www.ciena.com/",

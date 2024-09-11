@@ -17,6 +17,14 @@ export default {
       "Voici quelques-unes des entreprises pour lesquelles j'ai travaillé!",
     content: [
       {
+        title: "Motorola Solutions",
+        description: "Ingénieur Logiciel",
+        website: "https://www.motorolasolutions.com/",
+        tags: ["Java", "Spring Boot", "AWS", "Docker", "Kubernetes"],
+        img: "motorola",
+        show_border_passive: false,
+      },
+      {
         title: "Ciena",
         description: "Ingénieur Logiciel",
         website: "https://www.ciena.com/",

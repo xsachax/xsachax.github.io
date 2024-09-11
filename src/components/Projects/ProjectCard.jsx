@@ -39,6 +39,11 @@ function ProjectCard({
     Flutter: "var(--flutter)",
     Dart: "var(--dart)",
     Tailwind: "var(--tailwind)",
+    Java: "var(--java)",
+    Springboot: "var(--springboot)",
+    AWS: "var(--aws)",
+    Docker: "var(--docker)",
+    Kubernetes: "var(--kubernetes)",
   };
 
   const tagLinks = {
@@ -62,6 +67,11 @@ function ProjectCard({
     Flutter: "https://flutter.dev/",
     Dart: "https://dart.dev/",
     Tailwind: "https://tailwindcss.com/",
+    Java: "https://www.java.com/",
+    Springboot: "https://spring.io/projects/spring-boot",
+    AWS: "https://aws.amazon.com/",
+    Docker: "https://www.docker.com/",
+    Kubernetes: "https://kubernetes.io/",
   };
 
   const [showContent, setShowContent] = useState(false);

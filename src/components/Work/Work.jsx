@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import styles from "./Work.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
+import motorola from "../../assets/thumbnails/motorola.svg";
 import ciena from "../../assets/thumbnails/ciena.svg";
 import propel from "../../assets/thumbnails/propel.svg";
 import synchroteam from "../../assets/thumbnails/synchroteam.svg";
@@ -12,12 +13,14 @@ import RevealDiv from "../../utils/RevealDiv";
 function Work() {
   const work = t("work.content");
   const thumbnails = {
+    motorola: motorola,
     ciena: ciena,
     propel: propel,
     synchroteam: synchroteam,
   };
 
   const border_colors = {
+    motorola: "var(--motorola-border)",
     ciena: "var(--ciena-border)",
     propel: "var(--propel-border)",
     synchroteam: "var(--synchroteam-border)",
