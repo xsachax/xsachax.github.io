@@ -54,6 +54,15 @@ export default {
     subtitle: "Here are some of the projects I've worked on!",
     content: [
       {
+        title: "EcoRewards",
+        description: "Earn and burn rewards points by making green choices.",
+        github: "https://github.com/jeffrey-zang/ecorewards",
+        devpost: "https://devpost.com/software/ecorewards-t0qw26",
+        tags: ["Remix", "Typescript", "ExpressJS", "PostgreSQL", "Tailwind"],
+        img: "eco_rewards",
+        show_border_passive: false,
+      },
+      {
         title: "VRoom",
         description: "Collaborative Breakout Rooms in Virtual Reality.",
         github: "https://github.com/xsachax/vroom_uottahack-2024",

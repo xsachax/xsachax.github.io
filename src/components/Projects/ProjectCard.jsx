@@ -44,6 +44,10 @@ function ProjectCard({
     AWS: "var(--aws)",
     Docker: "var(--docker)",
     Kubernetes: "var(--kubernetes)",
+    Remix: "var(--remix)",
+    ExpressJS: "var(--expressjs)",
+    PostgreSQL: "var(--postgresql)",
+    Typescript: "var(--typescript)",
   };
 
   const tagLinks = {
@@ -72,6 +76,10 @@ function ProjectCard({
     AWS: "https://aws.amazon.com/",
     Docker: "https://www.docker.com/",
     Kubernetes: "https://kubernetes.io/",
+    Remix: "https://remix.run/",
+    ExpressJS: "https://expressjs.com/",
+    PostgreSQL: "https://www.postgresql.org/",
+    Typescript: "https://www.typescriptlang.org/",
   };
 
   const [showContent, setShowContent] = useState(false);

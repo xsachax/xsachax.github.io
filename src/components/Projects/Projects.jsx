@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard";
 import styles from "./Projects.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
+import eco_rewards from "../../assets/thumbnails/eco-rewards.svg";
 import vroom from "../../assets/thumbnails/vroom.svg";
 import vr_viz from "../../assets/thumbnails/vr-viz.svg";
 import dot_deck from "../../assets/thumbnails/dot-deck.svg";
@@ -19,6 +20,7 @@ import RevealDiv from "../../utils/RevealDiv";
 function Projects() {
   const projects = t("projects.content");
   const thumbnails = {
+    eco_rewards: eco_rewards,
     vroom: vroom,
     vr_viz: vr_viz,
     dot_deck: dot_deck,
@@ -33,6 +35,7 @@ function Projects() {
   };
 
   const border_colors = {
+    eco_rewards: "var(--eco-rewards-border)",
     vroom: "var(--vroom-border)",
     vr_viz: "var(--vr-viz-border)",
     dot_deck: "var(--dot-deck-border)",

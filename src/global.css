@@ -73,7 +73,7 @@
   --python: #ffee00;
   --unity: #cdcdcd;
   --c-sharp: #09ff00;
-  --vr: #8f32fa;
+  --vr: #a561f3;
   --plotly: #00ffdd;
   --tensorflow: #ff6f00;
   --opencv: #00ffd9;
@@ -91,11 +91,16 @@
   --aws: #ff9900;
   --docker: #0db7ed;
   --kubernetes: #326ce5;
+  --remix: #ef476b;
+  --expressjs: #fed966;
+  --typescript: #007acc;
+  --postgresql: #9beefb;
 
   --motorola-border: #2887e0;
   --ciena-border: #d90400;
   --propel-border: #ffffff;
   --synchroteam-border: #e58d25;
+  --eco-rewards-border: #36ae57;
   --vroom-border: #f39d18;
   --vr-viz-border: #8900de;
   --dot-deck-border: #787878c1;
