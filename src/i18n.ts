@@ -1,3 +1,5 @@
+// This code was generously provided by the one and only Daniel Thorp, the goat himself.
+
 import { useStore } from "@nanostores/react";
 import en from "./locales/en";
 import fr from "./locales/fr";
