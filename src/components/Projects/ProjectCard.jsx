@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import github_card_icon from "../../assets/icons/github_card_icon.svg";
 import devpost_card_icon from "../../assets/icons/devpost_card_icon.svg";
 import website_card_icon from "../../assets/icons/website_card_icon.svg";
@@ -83,16 +83,27 @@ function ProjectCard({
   };
 
   const [showContent, setShowContent] = useState(false);
+  const hoverTimeout = useRef(null);
 
   useEffect(() => {
     AOS.init();
   }, []);
 
+  const handleMouseEnter = () => {
+    clearTimeout(hoverTimeout.current);
+    hoverTimeout.current = setTimeout(() => setShowContent(true), 0);
+  };
+
+  const handleMouseLeave = () => {
+    clearTimeout(hoverTimeout.current);
+    hoverTimeout.current = setTimeout(() => setShowContent(false), 50);
+  };
+
   return (
     <div
       className={styles["project-card-container"]}
-      onMouseEnter={() => setShowContent(true)}
-      onMouseLeave={() => setShowContent(false)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       data-aos="fade-up"
       data-aos-duration="700"
     >
