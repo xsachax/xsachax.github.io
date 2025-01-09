@@ -48,6 +48,9 @@ function ProjectCard({
     ExpressJS: "var(--expressjs)",
     PostgreSQL: "var(--postgresql)",
     Typescript: "var(--typescript)",
+    Ruby: "var(--ruby)",
+    Rails: "var(--rails)",
+    GraphQL: "var(--graphql)",
   };
 
   const tagLinks = {
@@ -80,6 +83,9 @@ function ProjectCard({
     ExpressJS: "https://expressjs.com/",
     PostgreSQL: "https://www.postgresql.org/",
     Typescript: "https://www.typescriptlang.org/",
+    Ruby: "https://www.ruby-lang.org/en/",
+    Rails: "https://rubyonrails.org/",
+    GraphQL: "https://graphql.org/",
   };
 
   const [showContent, setShowContent] = useState(false);

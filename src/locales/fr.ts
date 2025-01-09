@@ -17,6 +17,14 @@ export default {
       "Voici quelques-unes des entreprises pour lesquelles j'ai travaillé!",
     content: [
       {
+        title: "Shopify",
+        description: "Ingénieur Logiciel",
+        website: "https://www.shopify.com/",
+        tags: ["Ruby", "Rails", "GraphQL"],
+        img: "shopify",
+        show_border_passive: false,
+      },
+      {
         title: "Motorola Solutions",
         description: "Ingénieur Logiciel",
         website: "https://www.motorolasolutions.com/",

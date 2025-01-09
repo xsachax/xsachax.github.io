@@ -116,7 +116,7 @@
   font-weight: 500;
   transition: all 0.3s ease;
   font-size: 0.7rem;
-  opacity: 0.8;
+  opacity: 0.95;
   transform: perspective(1000px) translateZ(0px);
 }
 

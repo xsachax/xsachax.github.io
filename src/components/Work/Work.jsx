@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import styles from "./Work.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
+import shopify from "../../assets/thumbnails/shopify.svg";
 import motorola from "../../assets/thumbnails/motorola.svg";
 import ciena from "../../assets/thumbnails/ciena.svg";
 import propel from "../../assets/thumbnails/propel.svg";
@@ -13,6 +14,7 @@ import RevealDiv from "../../utils/RevealDiv";
 function Work() {
   const work = t("work.content");
   const thumbnails = {
+    shopify: shopify,
     motorola: motorola,
     ciena: ciena,
     propel: propel,
@@ -20,6 +22,7 @@ function Work() {
   };
 
   const border_colors = {
+    shopify: "var(--shopify-border)",
     motorola: "var(--motorola-border)",
     ciena: "var(--ciena-border)",
     propel: "var(--propel-border)",
