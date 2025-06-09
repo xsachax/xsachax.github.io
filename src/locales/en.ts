@@ -16,6 +16,14 @@ export default {
     subtitle: "Here are some of the companies I've worked for!",
     content: [
       {
+        title: "Tesla",
+        description: "Software Engineer Intern",
+        website: "https://www.tesla.com/",
+        tags: ["Go", "Bash", "Docker"],
+        img: "tesla",
+        show_border_passive: false,
+      },
+      {
         title: "Shopify",
         description: "Software Engineer Intern",
         website: "https://www.shopify.com/",

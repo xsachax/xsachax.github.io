@@ -1,23 +1,20 @@
 @font-face {
   font-family: Circular;
-  src: url(/src/assets/fonts/circular/CircularSpotifyText-Light.otf)
-    format("truetype");
+  src: url(/src/assets/fonts/circular/CircularSpotifyText-Light.otf) format("truetype");
   font-weight: 300;
   font-weight: light;
   font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  src: url(/src/assets/fonts/circular/CircularSpotifyText-Medium.otf)
-    format("truetype");
+  src: url(/src/assets/fonts/circular/CircularSpotifyText-Medium.otf) format("truetype");
   font-weight: 500;
   font-weight: medium;
   font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  src: url(/src/assets/fonts/circular/CircularSpotifyText-Bold.otf)
-    format("truetype");
+  src: url(/src/assets/fonts/circular/CircularSpotifyText-Bold.otf) format("truetype");
   font-weight: 700;
   font-weight: bold;
   font-display: swap;
@@ -41,12 +38,7 @@
   --shade-10: #161616;
   --shade-11: #0f0f0f;
 
-  --text-theme-gradient: linear-gradient(
-    45deg,
-    rgba(255, 217, 24, 0.7) 0%,
-    rgba(239, 46, 46, 0.7) 50%,
-    rgba(255, 37, 193, 0.7) 100%
-  );
+  --text-theme-gradient: linear-gradient(45deg, rgba(255, 217, 24, 0.7) 0%, rgba(239, 46, 46, 0.7) 50%, rgba(255, 37, 193, 0.7) 100%);
 
   --theme-gradient: linear-gradient(
     45deg,
@@ -98,7 +90,10 @@
   --ruby: #ff0000;
   --rails: #e40050;
   --graphql: #ff55c6;
+  --go: #05a7d0;
+  --bash: #8df632;
 
+  --tesla-border: #e31a39;
   --shopify-border: #ffffff;
   --motorola-border: #2887e0;
   --ciena-border: #d90400;

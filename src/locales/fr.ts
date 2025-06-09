@@ -13,9 +13,16 @@ export default {
   },
   work: {
     title: "Expérience 🚀",
-    subtitle:
-      "Voici quelques-unes des entreprises pour lesquelles j'ai travaillé!",
+    subtitle: "Voici quelques-unes des entreprises pour lesquelles j'ai travaillé!",
     content: [
+      {
+        title: "Tesla",
+        description: "Ingénieur Logiciel",
+        website: "https://www.tesla.com/",
+        tags: ["Go", "Bash", "Docker"],
+        img: "tesla",
+        show_border_passive: false,
+      },
       {
         title: "Shopify",
         description: "Ingénieur Logiciel",
@@ -64,8 +71,7 @@ export default {
     content: [
       {
         title: "EcoRewards",
-        description:
-          "Gagnez et dépensez des points de récompense en faisant des choix écologiques.",
+        description: "Gagnez et dépensez des points de récompense en faisant des choix écologiques.",
         github: "https://github.com/jeffrey-zang/ecorewards",
         devpost: "https://devpost.com/software/ecorewards-t0qw26",
         tags: ["Remix", "Typescript", "ExpressJS", "PostgreSQL", "Tailwind"],
@@ -83,8 +89,7 @@ export default {
       },
       {
         title: "Vr Viz",
-        description:
-          "Application de réalité virtuelle mettant en évidence les tendances des données Open-source.",
+        description: "Application de réalité virtuelle mettant en évidence les tendances des données Open-source.",
         github: "https://github.com/xsachax/vr_viz-conuhacks-2024",
         devpost: "https://devpost.com/software/vr-viz-f4jmy1",
         tags: ["VR", "Unity", "C#"],
@@ -111,8 +116,7 @@ export default {
       },
       {
         title: "Dot Deck",
-        description:
-          "Application web de visualisation de données pour des informations sur le trading d'actions.",
+        description: "Application web de visualisation de données pour des informations sur le trading d'actions.",
         github: "https://github.com/xsachax/dot-deck_conuhacks-2023",
         devpost: "https://devpost.com/software/dot-deck",
         tags: ["Python", "Plotly", "Pandas"],
@@ -121,8 +125,7 @@ export default {
       },
       {
         title: "Read-me",
-        description:
-          "Application de reconnaissance de texte pour les résultats de tests accessibles.",
+        description: "Application de reconnaissance de texte pour les résultats de tests accessibles.",
         github: "https://github.com/xsachax/accessible-test-results",
         website: "https://read-me.app",
         tags: ["Javascript", "Tensorflow", "OpenCV"],
@@ -131,8 +134,7 @@ export default {
       },
       {
         title: "FAANG Slayer",
-        description:
-          "Application d'entraînement aux entretiens VR pour les entreprises FAANG.",
+        description: "Application d'entraînement aux entretiens VR pour les entreprises FAANG.",
         github: "https://github.com/xsachax/faang-slayer_mchacks-2024",
         devpost: "https://devpost.com/software/faang-slayer",
         tags: ["VR", "Unity", "AI"],
@@ -141,8 +143,7 @@ export default {
       },
       {
         title: "Hungry.ai",
-        description:
-          "Outil de recommandation de nourriture alimenté par l'AI et l'apprentissage automatique.",
+        description: "Outil de recommandation de nourriture alimenté par l'AI et l'apprentissage automatique.",
         github: "https://github.com/xsachax/waffle-hacks-2023",
         devpost: "https://devpost.com/software/hungry-ai",
         tags: ["React", "Tensorflow", "AI"],

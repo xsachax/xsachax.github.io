@@ -7,17 +7,7 @@ import "../../global.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function ProjectCard({
-  image,
-  title,
-  description,
-  github,
-  devpost,
-  website,
-  tags,
-  border_color,
-  show_border_passive,
-}) {
+function ProjectCard({ image, title, description, github, devpost, website, tags, border_color, show_border_passive }) {
   const tagColors = {
     React: "var(--react)",
     Astro: "var(--astro)",
@@ -51,6 +41,8 @@ function ProjectCard({
     Ruby: "var(--ruby)",
     Rails: "var(--rails)",
     GraphQL: "var(--graphql)",
+    Go: "var(--go)",
+    Bash: "var(--bash)",
   };
 
   const tagLinks = {
@@ -86,6 +78,8 @@ function ProjectCard({
     Ruby: "https://www.ruby-lang.org/en/",
     Rails: "https://rubyonrails.org/",
     GraphQL: "https://graphql.org/",
+    Go: "https://go.dev/",
+    Bash: "https://www.gnu.org/software/bash/",
   };
 
   const [showContent, setShowContent] = useState(false);
@@ -106,21 +100,12 @@ function ProjectCard({
   };
 
   return (
-    <div
-      className={styles["project-card-container"]}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      data-aos="fade-up"
-      data-aos-duration="700"
-    >
+    <div className={styles["project-card-container"]} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} data-aos="fade-up" data-aos-duration="700">
       <div
         className={styles["project-card"]}
         id="project-card"
         onClick={() => {
-          window.open(
-            website ? website : devpost ? devpost : github ? github : null,
-            "_blank"
-          );
+          window.open(website ? website : devpost ? devpost : github ? github : null, "_blank");
         }}
         style={{
           backgroundImage: `url(${image})`,
@@ -128,59 +113,30 @@ function ProjectCard({
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           height: showContent ? "95%" : "100%",
-          border:
-            (border_color && showContent) || show_border_passive
-              ? `1px solid ${border_color}`
-              : "1px solid transparent",
+          border: (border_color && showContent) || show_border_passive ? `1px solid ${border_color}` : "1px solid transparent",
         }}
       >
         {showContent && (
           <div className={styles["project-card-content"]}>
             <div className={styles["project-card-text"]}>
               <h5 className={styles["project-card-text-title"]}>{title}</h5>
-              <h5 className={styles["project-card-text-description"]}>
-                {description}
-              </h5>
+              <h5 className={styles["project-card-text-description"]}>{description}</h5>
             </div>
             <div className={styles["project-extra"]}>
               <div className={styles["project-links"]}>
                 {github && (
-                  <div
-                    onClick={() => window.open(github, "_blank")}
-                    className={styles["project-link"]}
-                  >
-                    <img
-                      src={github_card_icon}
-                      alt="GitHub"
-                      width="25px"
-                      height="25px"
-                    />
+                  <div onClick={() => window.open(github, "_blank")} className={styles["project-link"]}>
+                    <img src={github_card_icon} alt="GitHub" width="25px" height="25px" />
                   </div>
                 )}
                 {devpost && (
-                  <div
-                    onClick={() => window.open(devpost, "_blank")}
-                    className={styles["project-link"]}
-                  >
-                    <img
-                      src={devpost_card_icon}
-                      alt="Devpost"
-                      width="25px"
-                      height="25px"
-                    />
+                  <div onClick={() => window.open(devpost, "_blank")} className={styles["project-link"]}>
+                    <img src={devpost_card_icon} alt="Devpost" width="25px" height="25px" />
                   </div>
                 )}
                 {website && (
-                  <div
-                    onClick={() => window.open(website, "_blank")}
-                    className={styles["project-link"]}
-                  >
-                    <img
-                      src={website_card_icon}
-                      alt="Website"
-                      width="25px"
-                      height="25px"
-                    />
+                  <div onClick={() => window.open(website, "_blank")} className={styles["project-link"]}>
+                    <img src={website_card_icon} alt="Website" width="25px" height="25px" />
                   </div>
                 )}
               </div>
