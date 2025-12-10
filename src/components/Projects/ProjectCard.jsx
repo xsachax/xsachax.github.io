@@ -43,6 +43,11 @@ function ProjectCard({ image, title, description, github, devpost, website, tags
     GraphQL: "var(--graphql)",
     Go: "var(--go)",
     Bash: "var(--bash)",
+    Nix: "var(--nix)",
+    ThreeJS: "var(--threejs)",
+    Flask: "var(--flask)",
+    Kafka: "var(--kafka)",
+    Redis: "var(--redis)",
   };
 
   const tagLinks = {
@@ -80,6 +85,11 @@ function ProjectCard({ image, title, description, github, devpost, website, tags
     GraphQL: "https://graphql.org/",
     Go: "https://go.dev/",
     Bash: "https://www.gnu.org/software/bash/",
+    Nix: "https://nixos.org/",
+    ThreeJS: "https://threejs.org/",
+    Flask: "https://flask.palletsprojects.com/",
+    Kafka: "https://kafka.apache.org/",
+    Redis: "https://redis.io/",
   };
 
   const [showContent, setShowContent] = useState(false);

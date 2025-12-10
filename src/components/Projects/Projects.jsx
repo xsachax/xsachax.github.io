@@ -2,6 +2,8 @@ import ProjectCard from "./ProjectCard";
 import styles from "./Projects.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
+import microvisor from "../../assets/thumbnails/microvisor.svg";
+import pathfinder from "../../assets/thumbnails/pathfinder.svg";
 import eco_rewards from "../../assets/thumbnails/eco-rewards.svg";
 import vroom from "../../assets/thumbnails/vroom.svg";
 import vr_viz from "../../assets/thumbnails/vr-viz.svg";
@@ -20,6 +22,8 @@ import RevealDiv from "../../utils/RevealDiv";
 function Projects() {
   const projects = t("projects.content");
   const thumbnails = {
+    microvisor: microvisor,
+    pathfinder: pathfinder,
     eco_rewards: eco_rewards,
     vroom: vroom,
     vr_viz: vr_viz,
@@ -35,6 +39,8 @@ function Projects() {
   };
 
   const border_colors = {
+    microvisor: "var(--microvisor-border)",
+    pathfinder: "var(--pathfinder-border)",
     eco_rewards: "var(--eco-rewards-border)",
     vroom: "var(--vroom-border)",
     vr_viz: "var(--vr-viz-border)",

@@ -88,10 +88,15 @@
   --typescript: #007acc;
   --postgresql: #9beefb;
   --ruby: #ff0000;
-  --rails: #e40050;
+  --rails: #ff0059;
   --graphql: #ff55c6;
   --go: #05a7d0;
   --bash: #8df632;
+  --nix: #00ffff;
+  --threejs: #ffffff;
+  --flask: #e3e318;
+  --kafka: #ffffff;
+  --redis: #ff1313;
 
   --tesla-border: #e31a39;
   --shopify-border: #ffffff;
@@ -99,6 +104,8 @@
   --ciena-border: #d90400;
   --propel-border: #ffffff;
   --synchroteam-border: #e58d25;
+  --microvisor-border: #7EBAE4;
+  --pathfinder-border: #FF6AF3;
   --eco-rewards-border: #36ae57;
   --vroom-border: #f39d18;
   --vr-viz-border: #8900de;
