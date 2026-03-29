@@ -70,6 +70,14 @@ export default {
     subtitle: "Here are some of the projects I've worked on!",
     content: [
       {
+        title: "Bingo",
+        description: "A visual concurrency debugger for Go.",
+        github: "https://github.com/bingosuite/bingo",
+        tags: ["Go", "C"],
+        img: "bingo",
+        show_border_passive: false,
+      },
+      {
         title: "MicroVisor",
         description: "A general purpose multi-kernel operating system.",
         github: "https://github.com/MFarabi619/microvisor",
@@ -107,8 +115,7 @@ export default {
       },
       {
         title: "Vr Viz",
-        description:
-          "Virtual Reality app highlighting trends in Open-source Data.",
+        description: "Virtual Reality app highlighting trends in Open-source Data.",
         github: "https://github.com/xsachax/vr_viz-conuhacks-2024",
         devpost: "https://devpost.com/software/vr-viz-f4jmy1",
         tags: ["VR", "Unity", "C#"],
@@ -135,8 +142,7 @@ export default {
       },
       {
         title: "Read-me",
-        description:
-          "Accessible Rapid Test Reading Tool for the Visually Impaired.",
+        description: "Accessible Rapid Test Reading Tool for the Visually Impaired.",
         github: "https://github.com/xsachax/accessible-test-results",
         website: "https://read-me.app",
         tags: ["Javascript", "Tensorflow", "OpenCV"],
@@ -154,8 +160,7 @@ export default {
       },
       {
         title: "Hungry.ai",
-        description:
-          "Food Recommendation Tool powered by AI and Machine Learning.",
+        description: "Food Recommendation Tool powered by AI and Machine Learning.",
         github: "https://github.com/xsachax/waffle-hacks-2023",
         devpost: "https://devpost.com/software/hungry-ai",
         tags: ["React", "Tensorflow", "AI"],

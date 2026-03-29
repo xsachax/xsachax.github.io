@@ -70,6 +70,14 @@ export default {
     subtitle: "Voici quelques-uns des projets sur lesquels j'ai travaillé!",
     content: [
       {
+        title: "Bingo",
+        description: "Un débogueur de concurrence visuel pour Go.",
+        github: "https://github.com/bingosuite/bingo",
+        tags: ["Go", "C"],
+        img: "bingo",
+        show_border_passive: false,
+      },
+      {
         title: "MicroVisor",
         description: "Un système d'exploitation multi-kernel.",
         github: "https://github.com/MFarabi619/microvisor",

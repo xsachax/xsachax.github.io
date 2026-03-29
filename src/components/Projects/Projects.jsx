@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard";
 import styles from "./Projects.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
+import bingo from "../../assets/thumbnails/bingo.svg";
 import microvisor from "../../assets/thumbnails/microvisor.svg";
 import pathfinder from "../../assets/thumbnails/pathfinder.svg";
 import eco_rewards from "../../assets/thumbnails/eco-rewards.svg";
@@ -22,6 +23,7 @@ import RevealDiv from "../../utils/RevealDiv";
 function Projects() {
   const projects = t("projects.content");
   const thumbnails = {
+    bingo: bingo,
     microvisor: microvisor,
     pathfinder: pathfinder,
     eco_rewards: eco_rewards,
@@ -39,6 +41,7 @@ function Projects() {
   };
 
   const border_colors = {
+    bingo: "var(--bingo-border)",
     microvisor: "var(--microvisor-border)",
     pathfinder: "var(--pathfinder-border)",
     eco_rewards: "var(--eco-rewards-border)",
@@ -75,9 +78,7 @@ function Projects() {
             devpost={project.devpost ? project.devpost : null}
             website={project.website ? project.website : null}
             tags={project.tags ? project.tags : null}
-            border_color={
-              border_colors[project.img] ? border_colors[project.img] : null
-            }
+            border_color={border_colors[project.img] ? border_colors[project.img] : null}
             show_border_passive={project.show_border_passive}
           />
         ))}
