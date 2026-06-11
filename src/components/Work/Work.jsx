@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import styles from "./Work.module.css";
 import { t } from "../../i18n";
 import "../../global.css";
+import mai from "../../assets/thumbnails/mai.webp";
 import tesla from "../../assets/thumbnails/tesla.png";
 import shopify from "../../assets/thumbnails/shopify.svg";
 import motorola from "../../assets/thumbnails/motorola.svg";
@@ -15,6 +16,7 @@ import RevealDiv from "../../utils/RevealDiv";
 function Work() {
   const work = t("work.content");
   const thumbnails = {
+    mai: mai,
     tesla: tesla,
     shopify: shopify,
     motorola: motorola,
@@ -24,6 +26,7 @@ function Work() {
   };
 
   const border_colors = {
+    mai: "var(--mai-border)",
     tesla: "var(--tesla-border)",
     shopify: "var(--shopify-border)",
     motorola: "var(--motorola-border)",

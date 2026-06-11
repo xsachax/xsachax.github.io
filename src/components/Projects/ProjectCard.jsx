@@ -48,6 +48,7 @@ function ProjectCard({ image, title, description, github, devpost, website, tags
     Flask: "var(--flask)",
     Kafka: "var(--kafka)",
     Redis: "var(--redis)",
+    PyTorch: "var(--pytorch)",
   };
 
   const tagLinks = {
@@ -90,6 +91,7 @@ function ProjectCard({ image, title, description, github, devpost, website, tags
     Flask: "https://flask.palletsprojects.com/",
     Kafka: "https://kafka.apache.org/",
     Redis: "https://redis.io/",
+    PyTorch: "https://pytorch.org/",
   };
 
   const [showContent, setShowContent] = useState(false);

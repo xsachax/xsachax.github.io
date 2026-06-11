@@ -16,6 +16,14 @@ export default {
     subtitle: "Voici quelques-unes des entreprises pour lesquelles j'ai travaillé!",
     content: [
       {
+        title: "Microsoft AI",
+        description: "Stagiaire en ingénierie AI/ML appliquée",
+        website: "https://www.microsoft.ai/",
+        tags: ["Python", "PyTorch"],
+        img: "mai",
+        show_border_passive: false,
+      },
+      {
         title: "Tesla",
         description: "Ingénieur Logiciel",
         website: "https://www.tesla.com/",

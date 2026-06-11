@@ -16,6 +16,14 @@ export default {
     subtitle: "Here are some of the companies I've worked for!",
     content: [
       {
+        title: "Microsoft AI",
+        description: "Applied AI/ML Engineer Intern",
+        website: "https://www.microsoft.ai/",
+        tags: ["Python", "PyTorch"],
+        img: "mai",
+        show_border_passive: false,
+      },
+      {
         title: "Tesla",
         description: "Software Engineer Intern",
         website: "https://www.tesla.com/",
