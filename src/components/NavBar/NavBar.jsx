@@ -15,21 +15,28 @@ function NavBar({ fof }) {
     AOS.init();
   }, []);
 
-  window.onscroll = function () {
-    if (window.scrollY === 0) {
-      document.querySelector("nav").style.backgroundColor = "transparent";
-      document.querySelector("nav").style.backdropFilter = "blur(0px)";
-      document.getElementById("scroll_top").style.opacity = "0";
-      document.getElementById("scroll_top").style.pointerEvents = "none";
-      document.getElementById("scroll_top").style.cursor = "default";
-    } else {
-      document.querySelector("nav").style.backgroundColor = "var(--navbar)";
-      document.querySelector("nav").style.backdropFilter = "blur(5px)";
-      document.getElementById("scroll_top").style.opacity = "1";
-      document.getElementById("scroll_top").style.pointerEvents = "all";
-      document.getElementById("scroll_top").style.cursor = "pointer";
+  useEffect(() => {
+    if (fof) {
+      return;
     }
-  };
+
+    const nav = document.querySelector("nav");
+    const scrollTop = document.getElementById("scroll_top");
+
+    function updateNavbar() {
+      const isAtTop = window.scrollY === 0;
+      nav.style.backgroundColor = isAtTop ? "transparent" : "var(--navbar)";
+      nav.style.backdropFilter = isAtTop ? "blur(0px)" : "blur(5px)";
+      scrollTop.style.opacity = isAtTop ? "0" : "1";
+      scrollTop.style.pointerEvents = isAtTop ? "none" : "all";
+      scrollTop.style.cursor = isAtTop ? "default" : "pointer";
+    }
+
+    updateNavbar();
+    window.addEventListener("scroll", updateNavbar, { passive: true });
+
+    return () => window.removeEventListener("scroll", updateNavbar);
+  }, [fof]);
 
   return (
     <>

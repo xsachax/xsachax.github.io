@@ -1,4 +1,3 @@
-import { TypeAnimation } from "react-type-animation";
 import styles from "./About.module.css";
 import { t } from "../../i18n";
 import "../../global.css";

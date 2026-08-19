@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import "../global.css";
 
@@ -14,7 +14,7 @@ function RevealDiv({ children, delay = 0 }) {
       controls.start("visible");
       slideControls.start("visible");
     }
-  }, [isInView]);
+  }, [controls, isInView, slideControls]);
 
   return (
     <div

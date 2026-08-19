@@ -1,5 +1,4 @@
 import ProjectCard from "../Projects/ProjectCard";
-import { TypeAnimation } from "react-type-animation";
 import styles from "./Work.module.css";
 import { t } from "../../i18n";
 import "../../global.css";

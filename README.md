@@ -1,7 +1,11 @@
 ## Personal portfolio website
 
 Quick commands:
-- npm i
-- npm run dev
-- npm run build
-- npm run deploy
+
+- `pnpm install`
+- `pnpm dev`
+- `pnpm lint`
+- `pnpm build`
+
+Pull requests are linted and built in GitHub Actions. Merges to `main` are
+automatically deployed to GitHub Pages at [sachaa.dev](https://sachaa.dev).
