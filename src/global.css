@@ -1,27 +1,25 @@
 @font-face {
   font-family: Circular;
-  src: url(/src/assets/fonts/circular/CircularSpotifyText-Light.otf) format("truetype");
+  src: url(/src/assets/fonts/circular/CircularSpotifyText-Light.otf) format("opentype");
   font-weight: 300;
-  font-weight: light;
   font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  src: url(/src/assets/fonts/circular/CircularSpotifyText-Medium.otf) format("truetype");
+  src: url(/src/assets/fonts/circular/CircularSpotifyText-Medium.otf) format("opentype");
   font-weight: 500;
-  font-weight: medium;
   font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  src: url(/src/assets/fonts/circular/CircularSpotifyText-Bold.otf) format("truetype");
+  src: url(/src/assets/fonts/circular/CircularSpotifyText-Bold.otf) format("opentype");
   font-weight: 700;
-  font-weight: bold;
   font-display: swap;
 }
 
 :root {
   scrollbar-gutter: stable;
+  color-scheme: dark;
 
   --navbar: rgba(38, 38, 38, 0.8);
 
@@ -123,75 +121,39 @@
   --feather-fox-border: #c85622aa;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--shade-10);
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--shade-10);
   color: var(--shade-0);
-  font-family: Circular;
+  font-family: Circular, "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   margin: 0;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-  font-size: 2rem;
-  padding: 0;
-  margin: 0;
+button,
+a {
+  font: inherit;
 }
 
-h2 {
-  font-size: 1.75rem;
-  padding: 0;
-  margin: 0;
+:focus-visible {
+  outline: 2px solid #ffb13b;
+  outline-offset: 4px;
 }
 
-h3 {
-  font-size: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-
-h4 {
-  font-size: 1.25rem;
-  padding: 0;
-  margin: 0;
-}
-
-h5 {
-  font-size: 1rem;
-  padding: 0;
-  margin: 0;
-}
-
-h6 {
-  font-size: 0.75rem;
-  padding: 0;
-  margin: 0;
-}
-
-p {
-  font-size: 1rem;
-  padding: 0;
-  color: var(--shade-2);
-  margin: 0rem;
-}
-
-@media screen and (max-width: 510px) {
-  h1 {
-    font-size: 1.75rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 1.25rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  h5 {
-    font-size: 0.75rem;
-  }
-  h6 {
-    font-size: 0.5rem;
-  }
+::selection {
+  background: rgba(238, 91, 37, 0.4);
+  color: #fff;
 }
